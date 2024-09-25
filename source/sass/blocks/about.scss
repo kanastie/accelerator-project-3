@@ -1,0 +1,150 @@
+.about__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.about__first-wrap p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $base-black;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.about__headline {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $accent-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.about__second-wrap p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 26px;
+  }
+}
+
+.about__link {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $accent-blue;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  background-color: $accent-blue;
+
+  list-style: 0;
+}
+
+.about__list h4 {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+  }
+}
+
+.about__list p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $accent-beige;
+  text-transform: lowercase;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

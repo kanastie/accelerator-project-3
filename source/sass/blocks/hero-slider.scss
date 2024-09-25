@@ -1,0 +1,58 @@
+.hero-slider__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $accent-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+
+.hero-slider__slide p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 26px;
+  }
+}
+
+.hero-slider__link {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $accent-blue;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}

@@ -1,0 +1,100 @@
+.form__container {
+  background-color: $accent-blue;
+}
+
+.form__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-beige;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 26px;
+  }
+}
+
+.form__label {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $accent-beige;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 18px;
+  }
+
+  &--checkbox {
+    color: $base-white;
+  }
+}
+
+.form__input {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 18px;
+  }
+}
+
+.form__button {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $base-white;
+  letter-spacing: 0.24px;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}

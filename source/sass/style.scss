@@ -1,4 +1,39 @@
 // Vendor
-// ---------------------------------
 
 @import "vendor/normalize";
+
+// Global
+
+@import "common/variables";
+@import "common/global";
+@import "common/fonts";
+@import "common/visually-hidden";
+
+// Blocks
+
+@import "blocks/page-body";
+@import "blocks/main";
+@import "blocks/header";
+// @import "blocks/nav";
+@import "blocks/hero-slider";
+@import "blocks/about";
+@import "blocks/programms";
+@import "blocks/prog-slider";
+@import "blocks/grants";
+@import "blocks/news";
+@import "blocks/news-slider";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/reviews-slider";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer-nav";
+@import "blocks/copyright";
+
+// @import "blocks/privacy";
+
+// @import "blocks/tabs";
+// @import "blocks/slider";
+// @import "blocks/page-footer";
+// @import "blocks/footer";
+// @import "blocks/social";

@@ -1,0 +1,89 @@
+.grants--wrapper {
+  background-color: $accent-blue;
+}
+
+.grants__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.grants__first-wrap p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    color: $accent-beige;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.grants__headline {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $base-white;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.grants__claims-list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
+
+.grants__claims-text {
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-beige;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 26px;
+  }
+}

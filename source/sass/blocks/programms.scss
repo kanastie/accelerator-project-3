@@ -1,0 +1,37 @@
+.programms__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.programms__link {
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $accent-blue;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}
