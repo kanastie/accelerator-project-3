@@ -1,0 +1,46 @@
+.news__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-blue;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.news__point-list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
+
+.news__point-item-headline {
+  margin: 0;
+  padding: 0;
+
+  font-family: $manrope;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $accent-blue;
+  text-align: center;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}

@@ -25,12 +25,12 @@
             <img class="logo__img" src="" alt="Логотип" width="" height="" />
           </div>
           <div class="header__nav">
-            <h2 class="header__nav-title">Меню</h2>
+            <span class="header__nav-title">Меню</span>
             <div><button type="button"></button></div>
           </div>
         </header>
 
-        <div class="header__slider hero-slider">
+        <div class="hero__slider hero-slider">
           <div class="hero-slider__slide">
             <div class="hero-slider__bullets">
               <button type="button"></button>
@@ -51,20 +51,24 @@
 
       <section class="about" id="about" data-test="about">
         <div class="about__info">
-          <h2 class="about__title">О проекте «Стажировка»</h2>
-          <p>
-            «Стажировка» — совместный проект правительств и волонтёрских
-            бригад.
-          </p>
-          <h3>Наша цель</h3>
-          <p>
-            Наша деятельность направлена на повышение квалификации молодых
-            специалистов на ранних и средних стадиях карьеры, предоставляя
-            им инструменты для решения сложных проблем, с которыми
-            сталкиваются в мире. Цель центра — наделить этих людей
-            способностью инициировать значимые изменения.
-          </p>
-          <a class="about__link" href="#">Подробнее о проекте</a>
+          <div class="about__first-wrap">
+            <h2 class="about__title">О проекте «Стажировка»</h2>
+            <p>
+              «Стажировка» — совместный проект правительств и волонтёрских
+              бригад.
+            </p>
+          </div>
+          <div class="about__second-wrap">
+            <h3 class="about__headline">Наша цель</h3>
+            <p>
+              Наша деятельность направлена на повышение квалификации молодых
+              специалистов на ранних и средних стадиях карьеры, предоставляя
+              им инструменты для решения сложных проблем, с которыми
+              сталкиваются в мире. Цель центра — наделить этих людей
+              способностью инициировать значимые изменения.
+            </p>
+            <a class="about__link" href="#">Подробнее о проекте</a>
+          </div>
         </div>
 
         <div class="about__features">
@@ -100,8 +104,8 @@
         </div>
       </section>
 
-      <section class="programs" id="programs" data-test="programs">
-        <h2 class="programs__title">Программы</h2>
+      <section class="programms" id="programs" data-test="programs">
+        <h2 class="programms__title">Программы</h2>
         <div class="">
           <button type="button"></button>
           <button type="button"></button>
@@ -118,11 +122,11 @@
         </div>
 
         <div>
-          <a href="#">Все программы</a>
+          <a class="programms__link" href="#">Все программы</a>
         </div>
       </section>
 
-      <section class="grants" id="grants" data-test="grant">
+      <section class="grants grants--wrapper" id="grants" data-test="grant">
         <div class="grants__first-wrap">
           <h2 class="grants__title">Как поехать</h2>
           <p>
@@ -134,7 +138,7 @@
         </div>
 
         <div class="grants__second-wrap">
-          <h3 class="grants__headling">
+          <h3 class="grants__headline">
             Чтобы получить грант на обучение, вам нужно:
             </h2>
             <ul class="grants__claims-list">
@@ -162,19 +166,19 @@
         <h2 class="news__title">Новости и материалы</h2>
         <ul class="news__point-list">
           <li class="news__point-item">
-            <h3 class="news__point-item-headling">Общее</h3>
+            <h3 class="news__point-item-headline">Общее</h3>
           </li>
           <li class="news__point-item">
-            <h3 class="news__point-item-headling">Волонтёрство</h3>
+            <h3 class="news__point-item-headline">Волонтёрство</h3>
           </li>
           <li class="news__point-item">
-            <h3 class="news__point-item-headling">Стажировки</h3>
+            <h3 class="news__point-item-headline">Стажировки</h3>
           </li>
           <li class="news__point-item">
-            <h3 class="news__point-item-headling">Карьера</h3>
+            <h3 class="news__point-item-headline">Карьера</h3>
           </li>
           <li class="news__point-item">
-            <h3 class="news__point-item-headling">Путешествия</h3>
+            <h3 class="news__point-item-headline">Путешествия</h3>
           </li>
         </ul>
 
@@ -289,21 +293,21 @@
         </div>
       </section>
 
-      <section class="contacts" id="contacts" data-test="contacts">
+      <section class="contacts contacts--wrapper" id="contacts" data-test="contacts">
         <div class="contacts__first-wrap">
           <h2 class="contacts__title">Контакты</h2>
 
           <div class="contacts__list">
             <div class="contacts__item">
-              <h3 class="contacts__headling">Центральный офис</h3>
+              <h3 class="contacts__headline">Центральный офис</h3>
               <p class="contacts__decription">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
             </div>
             <div class="contacts__item">
-              <h3 class="contacts__headling">Телефон</h3>
+              <h3 class="contacts__headline">Телефон</h3>
               <p class="contacts__decription"><a href="tel:+796387687676">+7 963 876 876 76</a></p>
             </div>
             <div class="contacts__item">
-              <h3 class="contacts__headling">Email</h3>
+              <h3 class="contacts__headline">Email</h3>
               <p class="contacts__decription"><a href="mailto:Info@stazh.ru">Info@stazh.ru</a></p>
             </div>
           </div>
@@ -326,7 +330,7 @@
               <input class="form__input" type="text" name="name" title="Заполните это поле" required />
             </label>
             <label class="form__item">
-              <span>Номер телефона</span>
+              <span class="form__label">Номер телефона</span>
               <input class="form__input" type="tel" name="phone" pattern="\+7\[0-9]{10}" title="Заполните это поле" required />
             </label>
             <label class="form__item">
@@ -342,7 +346,7 @@
             <label class="form__item">
               <input class="form__input" type="checkbox" name="pd" title="Заполните это поле" required />
               <span class="form__mark"></span>
-              <span class="form__label">Я согласен на обработку моих персональных данных</span>
+              <span class="form__label form__label--checkbox">Я согласен на обработку моих персональных данных</span>
             </label>
 
             <button class="form__button" type="submit">Отправить</button>
@@ -384,7 +388,7 @@
       </section>
 
       <section class="copyright">
-        <span class="copyright__pp"><a href="" target="_blank">Политика конфиденциальности</a></span>
+        <span class="copyright__link"><a href="https://htmlacademy.ru/profession/frontender" target="_blank">Политика конфиденциальности</a></span>
         <span class="copyright__text">Стажировка © 2023 Все права защищены</span>
       </section>
 

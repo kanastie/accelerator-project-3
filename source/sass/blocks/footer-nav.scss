@@ -1,0 +1,24 @@
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
+
+.footer-nav__link {
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 17px;
+  }
+}
