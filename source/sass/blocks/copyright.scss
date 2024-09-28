@@ -1,4 +1,22 @@
-.copyright__link a {
+.copyright--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright__link {
   font-family: $manrope;
   font-size: 12px;
   line-height: 14px;
@@ -19,6 +37,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
+  display: block;
 
   font-family: $manrope;
   font-size: 12px;

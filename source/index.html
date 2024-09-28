@@ -49,7 +49,7 @@
         </div>
       </section>
 
-      <section class="about" id="about" data-test="about">
+      <section class="about about--wrapper" id="about" data-test="about">
         <div class="about__info">
           <div class="about__first-wrap">
             <h2 class="about__title">О проекте «Стажировка»</h2>
@@ -67,7 +67,10 @@
               сталкиваются в мире. Цель центра — наделить этих людей
               способностью инициировать значимые изменения.
             </p>
-            <a class="about__link" href="#">Подробнее о проекте</a>
+            <a class="about__link" href="#">
+              <span class="about__link-text">Подробнее о проекте</span>
+              <svg class="about__link-img"></svg>
+            </a>
           </div>
         </div>
 
@@ -162,10 +165,10 @@
         </div>
       </section>
 
-      <section class="news" id="news" data-test="news">
+      <section class="news news--wrapper" id="news" data-test="news">
         <h2 class="news__title">Новости и материалы</h2>
         <ul class="news__point-list">
-          <li class="news__point-item">
+          <li class="news__point-item news__point-item--active">
             <h3 class="news__point-item-headline">Общее</h3>
           </li>
           <li class="news__point-item">
@@ -203,53 +206,63 @@
         <div class="news__pagination">
           <button type="button"></button>
           <ul class="news__pagination-list">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
+            <li class="news__pagination-item news__pagination-item--active"><a href="#">1</a></li>
+            <li class="news__pagination-item"><a href="#">2</a></li>
+            <li class="news__pagination-item"><a href="#">3</a></li>
+            <li class="news__pagination-item"><a href="#">4</a></li>
           </ul>
           <button type="button"></button>
         </div>
       </section>
 
-      <section class="faq" data-test="FAQ">
+      <section class="faq faq--wrapper" data-test="FAQ">
         <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__container">
           <ul class="faq__list">
             <li class="faq__item">
-              <h3>Кто организатор? Какие сроки у программы?</h3>
+              <div>
+                <h3>Кто организатор? Какие сроки у программы?</h3>
+                <button class="faq__button"></button>
+              </div>
               <p></p>
-              <button class="faq__button"></button>
             </li>
             <li class="faq__item">
-              <h3>Что такое грант на обучение?</h3>
+              <div>
+                <h3>Что такое грант на обучение?</h3>
+                <button class="faq__button"></button>
+              </div>
               <p></p>
-              <button class="faq__button"></button>
             </li>
-            <li class="faq__item">
-              <h3>Как определяется стоимость программы?</h3>
+            <li class="faq__item faq__item--open">
+              <div>
+                <h3>Как определяется стоимость программы?</h3>
+                <button class="faq__button"></button>
+              </div>
               <p>
                 Полная стоимость определяется организаторами в зависимости
-                от направления. В большинстве случаев грант «Стажировка»
+                от&nbsp;направления. В большинстве случаев грант «Стажировка»
                 не покрывает полную стоимость программы, и поэтому
                 предусматривается определённая доля личного участия.
               </p>
-              <button class="faq__button"></button>
             </li>
             <li class="faq__item">
-              <h3>
-                Признаётся ли учёба в рамках проекта для дальнейшего обучения?
-              </h3>
+              <div>
+                <h3>
+                  Признаётся ли учёба в рамках проекта для дальнейшего обучения?
+                </h3>
+                <button class="faq__button"></button>
+              </div>
               <p></p>
-              <button class="faq__button"></button>
             </li>
             <li class="faq__item">
-              <h3>
-                Как выглядит полный процесс регистрации на программу
-                «Стажировка»?
-              </h3>
+              <div>
+                <h3>
+                  Как выглядит полный процесс регистрации на программу
+                  «Стажировка»?
+                </h3>
+                <button class="faq__button"></button>
+              </div>
               <p></p>
-              <button class="faq__button"></button>
             </li>
           </ul>
         </div>
@@ -356,12 +369,14 @@
       </section>
     </main>
 
-    <footer class="footer" data-test="footer">
+    <footer class="footer footer--wrapper" data-test="footer">
       <div class="footer__logo logo">
-        <img class="logo__img" src="" alt="Логотип" width="" height="" />
+        <div class="logo__background">
+          <img class="logo__img" src="" alt="Логотип" width="" height="" />
+        </div>
       </div>
 
-      <section class="footer-nav">
+      <section class="footer__nav footer-nav">
         <h2 class="visually-hidden">Навигация</h2>
         <nav class="footer-nav__container">
           <ul class="footer-nav__list">
@@ -387,12 +402,12 @@
         </nav>
       </section>
 
-      <section class="copyright">
-        <span class="copyright__link"><a href="https://htmlacademy.ru/profession/frontender" target="_blank">Политика конфиденциальности</a></span>
+      <section class="footer__copyright copyright copyright--wrapper">
+        <a class="copyright__link" href="https://htmlacademy.ru/profession/frontender" target="_blank">Политика конфиденциальности</a>
         <span class="copyright__text">Стажировка © 2023 Все права защищены</span>
       </section>
 
-      <section class="social">
+      <section class="footer__social social">
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
