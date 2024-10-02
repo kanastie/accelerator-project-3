@@ -1,20 +1,26 @@
 .grants--wrapper {
+  background-color: $accent-blue;
+}
+
+.grants__container {
   padding: 70px 15px;
+  margin: 0 auto;
+  width: 290px;
 
   display: flex;
   flex-direction: column;
   gap: 30px;
 
-  background-color: $accent-blue;
-
   @media (min-width: $tablet) {
     padding: 100px 45px;
+    width: 678px;
 
     gap: 40px;
   }
 
   @media (min-width: $desktop) {
     padding: 120px 100px;
+    width: 1240px;
 
     flex-direction: row;
     gap: 138px;
@@ -110,6 +116,7 @@
 .grants__claims-list {
   margin: 0;
   padding: 0;
+  padding-left: 15px;
 
   display: flex;
   flex-direction: column;
@@ -120,6 +127,8 @@
   list-style: none;
 
   @media (min-width: $tablet) {
+    padding-left: 20px;
+
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 25px;
@@ -137,7 +146,7 @@
   counter-increment: claim;
 
   position: relative;
-  padding: 25px 26px;
+  padding: 25px;
 
   border: 1px solid $accent-beige;
   border-radius: 16px;
@@ -200,4 +209,13 @@
   @media (min-width: $desktop) {
     line-height: 26px;
   }
+}
+
+.grants__img-container {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.grants__img {
+  display: block;
 }

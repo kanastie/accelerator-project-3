@@ -1,14 +1,20 @@
 .contacts--wrapper {
-  padding: 70px 15px;
-
   background-color: $accent-blue;
+}
+
+.contacts__container {
+  padding: 70px 15px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet) {
     padding: 100px 45px;
+    width: 678px;
   }
 
   @media (min-width: $desktop) {
     padding: 120px 100px;
+    width: 1240px;
   }
 }
 
@@ -128,4 +134,13 @@
   @media (min-width: $desktop) {
     line-height: 26px;
   }
+}
+
+.contacts__img-container {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.contacts__map {
+  display: block;
 }

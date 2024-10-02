@@ -1,16 +1,20 @@
 .about--wrapper {
-  padding: 50px 14px;
+  background-color: $accent-beige;
+}
+
+.about__container {
+  padding: 50px 15px;
+  margin: 0 auto;
   width: 290px;
 
   display: flex;
   flex-direction: column;
   gap: 40px;
 
-  background-color: $accent-beige;
-
   @media (min-width: $tablet) {
     padding: 50px 45px;
     width: 678px;
+
     gap: 60px;
   }
 
@@ -149,7 +153,6 @@
 
   display: flex;
   align-items: center;
-  gap: 20px;
 
   text-decoration: none;
   border: 1px solid $accent-blue;
@@ -160,11 +163,13 @@
   @media (min-width: $tablet) {
     padding: 5px 5px 5px 31px;
     width: 279px;
-    gap: 28px;
   }
 }
 
 .about__link-text {
+  margin-right: auto;
+  width: 143px;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 12px;
@@ -175,6 +180,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 167px;
+
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
@@ -182,12 +189,20 @@
 }
 
 .about__link-img {
-  padding: 19px;
-  width: 8px;
-  height: 8px;
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: $accent-blue;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 46px;
+    height: 46px;
+  }
 }
 
 .about__list {
@@ -256,6 +271,11 @@
   height: 42px;
 
   background-color: $accent-blue;
+
+  background-image: url("../../img/sprite/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 22px;
 }
 
 .about__list h4 {

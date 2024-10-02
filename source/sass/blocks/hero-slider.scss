@@ -258,6 +258,7 @@
 
 .hero-slider__link-text {
   margin-right: auto;
+  width: 74px;
 
   font-family: $manrope;
   font-size: 12px;
@@ -269,6 +270,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 86px;
+
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
@@ -276,7 +279,6 @@
 }
 
 .hero-slider__link-img {
-  // padding: 13px;
   border-radius: 50%;
   background-color: $accent-blue;
 
