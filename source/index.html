@@ -327,41 +327,116 @@
         </div>
       </section>
 
-      <section class="reviews" id="reviews" data-test="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__pagination">
-          <button type="button"></button>
-          <button type="button"></button>
-        </div>
+      <section class="reviews reviews--wrapper" id="reviews" data-test="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
 
-        <div class="reviews__slider reviews-slider">
-          <div class="reviews-slider__slide">
-            <div class="reviews-slider__author">
-              <img src="" alt="Фото автора." width="60" height="60" />
-              <span>Лола Алекс</span>
+          <div class="reviews__slider reviews-slider">
+            <div class="reviews-slider__slide reviews-slider__slide--1">
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__author-img-container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/reviews/avatar1-tablet.jpg, ./img/reviews/avatar1-tablet@2x.jpg 2x" type="image/jpeg" width="90" height="90" />
+                    <img class="reviews-slider__author-img-img" src="./img/reviews/avatar1-mob.jpg" srcset="./img/reviews/avatar1-mob@2x.jpg 2x" alt="Фото автора." width="60" height="60" />
+                  </picture>
+                </div>
+                <div class="reviews-slider__author-name">
+                  <span>Лола</span>
+                  <span>Алекс</span>
+                </div>
+              </div>
+              <dl class="reviews-slider__features">
+                <div class="reviews-slider__first-wrap">
+                  <dt class="reviews-slider__term">Программа</dt>
+                  <dd class="reviews-slider__description">Masa Art Challenge</dd>
+                </div>
+                <div class="reviews-slider__second-wrap">
+                  <dt class="reviews-slider__term">Дата</dt>
+                  <dd class="reviews-slider__description">Осень 2022</dd>
+                </div>
+              </dl>
+              <h3>
+                Я могу с уверенностью сказать, что это был один из самых
+                незабываемых опытов в жизни!
+              </h3>
+              <p>
+                Я рекомендую программу «Стажировка» всем студентам, желающим
+                получить незабываемые впечатления. Сочетание путешествий,
+                общения и значимой работы действительно отличает её от других
+                программ, и я чувствую огромную благодарность за предоставленную
+                мне возможность.
+              </p>
             </div>
-            <dl class="reviews-slider__features">
-              <div class="reviews-slider__first-wrap">
-                <dt class="reviews-slider__term">Программа</dt>
-                <dd class="reviews-slider__description">Masa Art Challenge</dd>
+
+            <div class="reviews-slider__slide reviews-slider__slide--2">
+              <div class="reviews-slider__author">
+                <div class="reviews-slider__author-img-container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/reviews/avatar2-tablet.jpg, ./img/reviews/avatar2-tablet@2x.jpg 2x" type="image/jpeg" width="90" height="90" />
+                    <img class="reviews-slider__author-img-img" src="" srcset="" alt="Фото автора." width="60" height="60" />
+                  </picture>
+                </div>
+                <div class="reviews-slider__author-name">
+                  <span>Давид</span>
+                  <span>Иванов</span>
+                </div>
               </div>
-              <div class="reviews-slider__second-wrap">
-                <dt class="reviews-slider__term">Дата</dt>
-                <dd class="reviews-slider__description">Осень 2022</dd>
-              </div>
-            </dl>
-            <h3>
-              Я могу с уверенностью сказать, что это был один из самых
-              незабываемых опытов в жизни!
-            </h3>
-            <p>
-              Я рекомендую программу «Стажировка» всем студентам, желающим
-              получить незабываемые впечатления. Сочетание путешествий,
-              общения и значимой работы действительно отличает её от других
-              программ, и я чувствую огромную благодарность за предоставленную
-              мне возможность.
-            </p>
+              <dl class="reviews-slider__features">
+                <div class="reviews-slider__first-wrap">
+                  <dt class="reviews-slider__term">Программа</dt>
+                  <dd class="reviews-slider__description">Volunteer Chance</dd>
+                </div>
+                <div class="reviews-slider__second-wrap">
+                  <dt class="reviews-slider__term">Дата</dt>
+                  <dd class="reviews-slider__description">Лето 2022</dd>
+                </div>
+              </dl>
+              <h3>
+                Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.
+              </h3>
+              <p>
+                Каждый день был возможностью оказать ощутимое влияние
+                на жизнь других людей. Я бы очень рекомендовал
+                эту волонтёрскую программу всем, кто ищет значимый
+                и незабываемый опыт. Организация была на высшем уровне.
+                Для меня было честью быть частью такой удивительной
+                инициативы.
+              </p>
+            </div>
           </div>
+
+          <div class="reviews__scroll">
+          </div>
+
+          <div class="reviews__pagination">
+            <button class="reviews__pag-button reviews__pag-button--prev" type="button">
+              <svg
+                width="10"
+                height="10"
+                viewbox="0 0 10 10"
+                fill="none"
+                stroke="#316DC2"
+                role="img"
+                aria-hidden="true"
+                focusable="false">
+                <use href="/__spritemap#sprite-arrow2"></use>
+              </svg>
+            </button>
+            <button class="reviews__pag-button reviews__pag-button--next" type="button">
+              <svg
+                width="10"
+                height="10"
+                viewbox="0 0 10 10"
+                fill="none"
+                stroke="#316DC2"
+                role="img"
+                aria-hidden="true"
+                focusable="false">
+                <use href="/__spritemap#sprite-arrow2"></use>
+              </svg>
+            </button>
+          </div>
+
         </div>
       </section>
 
