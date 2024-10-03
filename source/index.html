@@ -273,55 +273,57 @@
       </section>
 
       <section class="faq faq--wrapper" data-test="FAQ">
-        <h2 class="faq__title">Вопросы и ответы</h2>
         <div class="faq__container">
-          <ul class="faq__list">
-            <li class="faq__item">
-              <div>
-                <h3>Кто организатор? Какие сроки у программы?</h3>
-                <button class="faq__button"></button>
-              </div>
-              <p></p>
-            </li>
-            <li class="faq__item">
-              <div>
-                <h3>Что такое грант на обучение?</h3>
-                <button class="faq__button"></button>
-              </div>
-              <p></p>
-            </li>
-            <li class="faq__item faq__item--open">
-              <div>
-                <h3>Как определяется стоимость программы?</h3>
-                <button class="faq__button"></button>
-              </div>
-              <p>
-                Полная стоимость определяется организаторами в зависимости
-                от&nbsp;направления. В большинстве случаев грант «Стажировка»
-                не покрывает полную стоимость программы, и поэтому
-                предусматривается определённая доля личного участия.
-              </p>
-            </li>
-            <li class="faq__item">
-              <div>
-                <h3>
-                  Признаётся ли учёба в рамках проекта для дальнейшего обучения?
-                </h3>
-                <button class="faq__button"></button>
-              </div>
-              <p></p>
-            </li>
-            <li class="faq__item">
-              <div>
-                <h3>
-                  Как выглядит полный процесс регистрации на программу
-                  «Стажировка»?
-                </h3>
-                <button class="faq__button"></button>
-              </div>
-              <p></p>
-            </li>
-          </ul>
+          <h2 class="faq__title">Вопросы и ответы</h2>
+          <div class="faq__content">
+            <ul class="faq__list">
+              <li class="faq__item">
+                <div>
+                  <h3>Кто организатор? Какие сроки у программы?</h3>
+                  <button class="faq__button"></button>
+                </div>
+                <p></p>
+              </li>
+              <li class="faq__item">
+                <div>
+                  <h3>Что такое грант на обучение?</h3>
+                  <button class="faq__button"></button>
+                </div>
+                <p></p>
+              </li>
+              <li class="faq__item faq__item--open">
+                <div>
+                  <h3>Как определяется стоимость программы?</h3>
+                  <button class="faq__button"></button>
+                </div>
+                <p>
+                  Полная стоимость определяется организаторами в зависимости
+                  от&nbsp;направления. В большинстве случаев грант «Стажировка»
+                  не покрывает полную стоимость программы, и поэтому
+                  предусматривается определённая доля личного участия.
+                </p>
+              </li>
+              <li class="faq__item">
+                <div>
+                  <h3>
+                    Признаётся ли учёба в рамках проекта для дальнейшего обучения?
+                  </h3>
+                  <button class="faq__button"></button>
+                </div>
+                <p></p>
+              </li>
+              <li class="faq__item">
+                <div>
+                  <h3>
+                    Как выглядит полный процесс регистрации на программу
+                    «Стажировка»?
+                  </h3>
+                  <button class="faq__button"></button>
+                </div>
+                <p></p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -396,41 +398,60 @@
         </div>
       </section>
 
-      <section class="form" data-test="form">
+      <section class="form form--wrapper" data-test="form">
         <div class="form__container">
-          <h2 class="form__title">Напишите нам</h2>
-          <p class="form__text">
-            Оставьте ваши контакты, если у вас остались вопросы —
-            мы на них ответим!
-          </p>
+          <div class="form__background">
+            <div class="form__content">
+              <h2 class="form__title">Напишите нам</h2>
+              <p class="form__text">
+                Оставьте ваши контакты, если у вас остались вопросы —
+                мы на них ответим!
+              </p>
 
-          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__item">
-              <span class="form__label">Имя</span>
-              <input class="form__input" type="text" name="name" title="Заполните это поле" required />
-            </label>
-            <label class="form__item">
-              <span class="form__label">Номер телефона</span>
-              <input class="form__input" type="tel" name="phone" pattern="\+7\[0-9]{10}" title="Заполните это поле" required />
-            </label>
-            <label class="form__item">
-              <span class="form__label">Ваше сообщение</span>
-              <textarea class="form__input" name="message" title="Заполните это поле" required></textarea>
-            </label>
-            <label class="form__item">
-              <span class="form__label">Выберите город</span>
-              <select class="form__input" name="city" title="Заполните это поле" required>
-                <option value=""></option>
-              </select>
-            </label>
-            <label class="form__item">
-              <input class="form__input" type="checkbox" name="pd" title="Заполните это поле" required />
-              <span class="form__mark"></span>
-              <span class="form__label form__label--checkbox">Я согласен на обработку моих персональных данных</span>
-            </label>
+              <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="form__item">
+                  <span class="form__label">Имя</span>
+                  <input class="form__input" type="text" name="name" title="Заполните это поле" required />
+                </label>
+                <label class="form__item">
+                  <span class="form__label">Номер телефона</span>
+                  <input class="form__input" type="tel" name="phone" pattern="\+7\[0-9]{10}" title="Заполните это поле" required />
+                </label>
+                <label class="form__item">
+                  <span class="form__label">Ваше сообщение</span>
+                  <textarea class="form__input form__input--textarea" name="message" title="Заполните это поле" required></textarea>
+                </label>
+                <label class="form__item form__item--select">
+                  <span class="form__label">Выберите город</span>
+                  <select class="form__input form__input--select" name="city" title="Заполните это поле" required>
+                    <option value=""></option>
+                  </select>
+                </label>
+                <label class="form__item form__item--checkbox">
+                  <input class="visually-hidden form__input" type="checkbox" name="pd" title="Заполните это поле" required />
+                  <span class="form__mark"></span>
+                  <span class="form__label form__label--checkbox">Я согласен на обработку моих персональных <span class="form__label--break"> данных</span></span>
+                </label>
 
-            <button class="form__button" type="submit">Отправить</button>
-          </form>
+                <button class="form__button" type="submit">
+                  <span class="form__button-text">Отправить</span>
+                  <span class="form__button-img">
+                    <svg
+                    width="8"
+                    height="8"
+                    viewbox="0 0 8 8"
+                    fill="none"
+                    stroke="#316dc2"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -439,7 +460,7 @@
     <footer class="footer footer--wrapper" data-test="footer">
       <div class="footer__logo logo">
         <div class="logo__background">
-          <img class="logo__img" src="" alt="Логотип" width="" height="" />
+          <img class="logo__img" src="/__spritemap#sprite-logo-view" alt="Логотип" width="30" height="30" />
         </div>
       </div>
 
@@ -478,26 +499,26 @@
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
-              <svg width="" height="" viewBox="" fill="" role="img" aria-hidden="true" focusable="false">
-                <use href=""></use>
-              </svg>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+              <!-- <svg width="12" height="8" viewBox="0 0 12 8" fill="white" role="img" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg> -->
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://htmlacademy.ru/" target="_blank">
-              <svg width="" height="" viewBox="" fill="" role="img" aria-hidden="true" focusable="false">
-                <use href=""></use>
-              </svg>
+            <a class="social__link social__link--ok" href="https://htmlacademy.ru/" target="_blank">
+              <!-- <svg width="8" height="12" viewBox="0 0 8 12" fill="white" role="img" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg> -->
               <span class="visually-hidden">Одноклассники</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://htmlacademy.ru/" target="_blank">
-              <svg width="" height="" viewBox="" fill="" role="img" aria-hidden="true" focusable="false">
-                <use href=""></use>
-              </svg>
+            <a class="social__link social__link--reddit" href="https://htmlacademy.ru/" target="_blank">
+              <!-- <svg width="12" height="12" viewBox="0 0 12 12" fill="white" role="img" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg> -->
               <span class="visually-hidden">Реддит</span>
             </a>
           </li>

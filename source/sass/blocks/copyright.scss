@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
 
   @media (min-width: $tablet) {
     align-items: flex-start;
@@ -17,12 +17,16 @@
 }
 
 .copyright__link {
+  padding-bottom: 2px;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   color: $base-black;
   text-decoration: none;
+
+  border-bottom: 1px solid $base-black;
 
   @media (min-width: $tablet) {
     line-height: 12px;

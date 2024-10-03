@@ -1,14 +1,20 @@
 .faq--wrapper {
-  padding: 50px 15px;
-
   background-color: $accent-beige;
+}
+
+.faq__container {
+  padding: 50px 15px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $tablet) {
     padding: 50px 45px;
+    width: 678px;
   }
 
   @media (min-width: $desktop) {
     padding: 60px 206px;
+    width: 1028px;
   }
 }
 
@@ -134,9 +140,45 @@
 }
 
 .faq__button {
+  position: relative;
+
   width: 40px;
   height: 40px;
   border: none;
   border-radius: 50%;
+  background-color: $accent-blue;
+}
+
+.faq__button::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  mask-image: url("../../img/sprite/plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 18px;
+  background-color: $base-white;
+}
+
+.faq__item--open .faq__button::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  mask-image: url("../../img/sprite/minus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 2px;
   background-color: $accent-blue;
 }
