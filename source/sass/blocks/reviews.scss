@@ -1,5 +1,28 @@
+.reviews--wrapper {
+  background-color: $accent-beige;
+}
+
+.reviews__container {
+  position: relative;
+
+  padding: 55px 15px 50px;
+  margin: 0 auto;
+  width: 290px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 0 50px 45px;
+    width: 723px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 65px 100px 70px;
+    width: 1240px;
+  }
+}
+
 .reviews__title {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   font-family: $manrope;
@@ -9,11 +32,101 @@
   color: $accent-blue;
 
   @media (min-width: $tablet) {
+    margin-bottom: 40px;
+
     font-size: 34px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 45px;
+
     font-size: 50px;
+  }
+}
+
+.reviews__slider {
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+    // width: calc(100% + 45px);
+
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 32px;
+  }
+}
+
+.reviews__pagination {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (min-width: $tablet) {
+    top: auto;
+    bottom: 40px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 60px;
+    right: 100px;
+  }
+}
+
+.reviews__pag-button {
+  padding: 6px;
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $accent-beige;
+  border: none;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__scroll {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: relative;
+
+    display: block;
+    width: 326px;
+    height: 2px;
+    background-color: $accent-blue;
+  }
+}
+
+.reviews__scroll::before {
+  display: none;
+
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: $accent-blue;
+    opacity: 20%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1136px;
   }
 }

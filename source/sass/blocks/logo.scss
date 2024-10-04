@@ -1,0 +1,15 @@
+.logo__background {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: $base-white;
+}
+
+.logo__img {
+  object-fit: cover;
+}

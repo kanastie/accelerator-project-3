@@ -1,5 +1,26 @@
+.faq--wrapper {
+  background-color: $accent-beige;
+}
+
+.faq__container {
+  padding: 50px 15px;
+  margin: 0 auto;
+  width: 290px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 45px;
+    width: 678px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 206px;
+    width: 1028px;
+  }
+}
+
 .faq__title {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   font-family: $manrope;
@@ -10,6 +31,8 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    margin-bottom: 60px;
+
     font-size: 34px;
     line-height: 50px;
   }
@@ -22,12 +45,48 @@
 .faq__list {
   margin: 0;
   padding: 0;
-  list-style: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.faq__item {
+  padding: 22px 17px;
+
+  border: 2px solid $accent-blue;
+  border-radius: 14px;
+
+  @media (min-width: $tablet) {
+    padding: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 42px;
+  }
+}
+
+.faq__item--open {
+  background-color: $accent-blue;
+}
+
+.faq__item--open button {
+  background-color: $base-white;
+}
+
+.faq__item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 29px;
 }
 
 .faq__item h3 {
   margin: 0;
   padding: 0;
+  width: 187px;
 
   font-family: $manrope;
   font-size: 16px;
@@ -36,14 +95,22 @@
   color: $accent-blue;
 
   @media (min-width: $tablet) {
+    width: 564px;
+
     font-size: 22px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop) {
+    width: 894px;
+
     font-size: 28px;
     line-height: 34px;
   }
+}
+
+.faq__item--open h3 {
+  color: $base-white;
 }
 
 .faq__item p {
@@ -62,6 +129,56 @@
   }
 
   @media (min-width: $desktop) {
+    width: 914px;
+
     line-height: 26px;
   }
+}
+
+.faq__item--open p {
+  padding-top: 20px;
+}
+
+.faq__button {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: $accent-blue;
+}
+
+.faq__button::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  mask-image: url("../../img/sprite/plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 18px;
+  background-color: $base-white;
+}
+
+.faq__item--open .faq__button::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  mask-image: url("../../img/sprite/minus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 2px;
+  background-color: $accent-blue;
 }

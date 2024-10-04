@@ -1,5 +1,28 @@
+.programms--wrapper {
+  background-color: $accent-beige;
+}
+
+.programms__container {
+  position: relative;
+
+  padding: 55px 15px 50px;
+  margin: 0 auto;
+  width: 290px;
+
+  @media (min-width: $tablet) {
+    padding: 54px 0 60px 45px;
+    width: 723px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 65px 100px 70px;
+    width: 1240px;
+  }
+}
+
 .programms__title {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   font-family: $manrope;
@@ -9,16 +32,70 @@
   color: $accent-blue;
 
   @media (min-width: $tablet) {
+    margin-bottom: 43px;
+
     font-size: 34px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 45px;
+
     font-size: 50px;
   }
 }
 
+.programms__slider {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 32px;
+  }
+}
+
+.programms__link-container {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 54px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 65px;
+    right: 100px;
+  }
+}
+
 .programms__link {
+  padding: 5px 5px 5px 21px;
+  width: 205px;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  border: 1px solid $accent-blue;
+  border-radius: 30px;
+
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding: 5px 5px 5px 31px;
+    width: 234px;
+  }
+}
+
+.programms__link-text {
+  margin-right: auto;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 12px;
@@ -26,12 +103,99 @@
   color: $accent-blue;
   letter-spacing: 0.24px;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
+  }
+}
+
+.programms__link-img {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $accent-blue;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.programms__scroll {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: relative;
+
+    display: block;
+    width: 326px;
+    height: 2px;
+    background-color: $accent-blue;
+  }
+}
+
+.programms__scroll::before {
+  display: none;
+
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: $accent-blue;
+    opacity: 20%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1136px;
+  }
+}
+
+.programms__pagination {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (min-width: $tablet) {
+    top: auto;
+    bottom: 50px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 60px;
+    right: 100px;
+  }
+}
+
+.programms__pag-button {
+  padding: 6px;
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $accent-beige;
+  border: none;
+
+  &--prev {
+    transform: rotate(180deg);
   }
 }

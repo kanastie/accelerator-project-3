@@ -1,9 +1,94 @@
+.form--wrapper {
+  background-color: $accent-beige;
+}
+
 .form__container {
+  padding: 40px 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 50px 58px;
+    width: 652px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 100px;
+    width: 1240px;
+  }
+}
+
+.form__background {
+  position: relative;
+
+  padding: 43px 10px;
+  min-height: 667px;
+  height: auto;
+
+  background-image: url("../../img/form/background-mob.jpg"),
+    linear-gradient(rgb(8 112 165 / 92%), rgb(155 141 141 / 91%));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/form/background-mob@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    width: 652px;
+    min-height: 780px;
+    overflow: hidden;
+    border-radius: 16px;
+
+    background-image: url("../../img/form/background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/form/background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 1240px;
+
+    background-image: url("../../img/form/background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/form/background-desktop@2x.jpg");
+    }
+  }
+}
+
+.form__content {
+  position: relative;
+  z-index: 1;
+
+  padding: 15px 15px 27px;
+  margin: 0 auto;
+  width: 270px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border-radius: 16px;
   background-color: $accent-blue;
+
+  @media (min-width: $tablet) {
+    padding: 41px 40px 36px;
+    margin: 0;
+    width: 362px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 44px 70px 40px;
+    width: 350px;
+  }
 }
 
 .form__title {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 
   font-family: $manrope;
@@ -13,11 +98,17 @@
   color: $base-white;
 
   @media (min-width: $tablet) {
+    padding-right: 16px;
+    margin-bottom: 31px;
+
     font-size: 28px;
     line-height: 28px;
   }
 
   @media (min-width: $desktop) {
+    padding-right: 0;
+    margin-bottom: 34px;
+
     font-size: 32px;
     line-height: 36px;
   }
@@ -25,6 +116,7 @@
 
 .form__text {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   font-family: $manrope;
@@ -32,14 +124,50 @@
   line-height: 20px;
   font-weight: 400;
   color: $accent-beige;
+  opacity: 90%;
 
   @media (min-width: $tablet) {
+    padding-right: 16px;
+    margin-bottom: 40px;
+
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop) {
+    padding-right: 0;
     line-height: 26px;
+  }
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+
+  &--checkbox {
+    position: relative;
+
+    flex-direction: row;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+      padding: 4px 0;
+    }
+  }
+
+  &--select {
+    @media (min-width: $desktop) {
+      height: 78px;
+    }
   }
 }
 
@@ -49,6 +177,7 @@
   line-height: 14px;
   font-weight: 400;
   color: $accent-beige;
+  opacity: 80%;
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -60,18 +189,47 @@
   }
 
   &--checkbox {
+    padding-left: 30px;
+
     color: $base-white;
+    opacity: 100%;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 18px;
+
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  &--break {
+    display: block;
+
+    @media (min-width: $tablet) {
+      display: inline;
+    }
   }
 }
 
 .form__input {
+  padding: 16px 25px;
+  min-width: 270px;
+  height: 50px;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   color: $base-white;
 
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  box-sizing: border-box;
+
   @media (min-width: $tablet) {
+    min-width: 362px;
+
     font-size: 14px;
     line-height: 20px;
   }
@@ -79,9 +237,86 @@
   @media (min-width: $desktop) {
     line-height: 18px;
   }
+
+  &--select {
+    min-width: 260px;
+
+    @media (min-width: $tablet) {
+      min-width: 362px;
+      height: 52px;
+    }
+  }
+
+  &--textarea {
+    min-height: 94px;
+
+    @media (min-width: $tablet) {
+      min-height: 88px;
+    }
+
+    @media (min-width: $desktop) {
+      min-height: 90px;
+    }
+  }
+}
+
+.form__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 50%);
+  width: 20px;
+  height: 20px;
+
+  border-radius: 2px;
+  background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    transform: none;
+  }
+}
+
+.form__input[type="checkbox"]:checked + .form__mark::before {
+  content: "";
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  mask-image: url("../../img/sprite/tick.svg");
+  mask-repeat: no-repeat;
+  mask-size: 10px 8px;
+  background-color: $accent-blue;
 }
 
 .form__button {
+  padding: 5px 5px 5px 31px;
+  width: 260px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid $base-white;
+  border-radius: 30px;
+  background-color: $accent-blue;
+
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    width: 352px;
+
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.form__button-text {
+  margin-right: auto;
+  width: 160px;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 12px;
@@ -89,12 +324,34 @@
   color: $base-white;
   letter-spacing: 0.24px;
   text-align: center;
-
-  box-sizing: border-box;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 240px;
+
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 238px;
+  }
+}
+
+.form__button-img {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $base-white;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 46px;
+    height: 46px;
   }
 }

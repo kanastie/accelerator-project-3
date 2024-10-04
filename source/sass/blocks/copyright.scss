@@ -1,10 +1,32 @@
-.copyright__link a {
+.copyright--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright__link {
+  padding-bottom: 2px;
+
   font-family: $manrope;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   color: $base-black;
   text-decoration: none;
+
+  border-bottom: 1px solid $base-black;
 
   @media (min-width: $tablet) {
     line-height: 12px;
@@ -19,6 +41,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
+  display: block;
 
   font-family: $manrope;
   font-size: 12px;
