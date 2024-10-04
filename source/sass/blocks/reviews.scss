@@ -11,9 +11,7 @@
 
   @media (min-width: $tablet) {
     padding: 50px 0 50px 45px;
-    width: 678px;
-
-    gap: 60px;
+    width: 723px;
   }
 
   @media (min-width: $desktop) {
@@ -50,6 +48,7 @@
 .reviews__slider {
   @media (min-width: $tablet) {
     margin-bottom: 50px;
+    // width: calc(100% + 45px);
 
     display: flex;
     gap: 30px;
