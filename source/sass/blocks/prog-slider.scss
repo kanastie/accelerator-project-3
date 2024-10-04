@@ -3,15 +3,7 @@
   height: 400px;
 
   border-radius: 12px;
-
-  background-image: url("../../img/programms/prog1-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/programms/prog1-desktop@2x.jpg");
-  }
+  background-color: #c4d0e7;
 
   @media (min-width: $tablet) {
     width: 324px;
@@ -21,6 +13,17 @@
   @media (min-width: $desktop) {
     width: 392px;
     height: 420px;
+  }
+}
+
+.prog-slider__slide--1 {
+  background-image: url("../../img/programms/prog1-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/programms/prog1-desktop@2x.jpg");
   }
 }
 
@@ -122,13 +125,6 @@
   background-image: url("../../img/sprite/angle1.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-
-  @media (min-width: $tablet) {
-    // width: 20px;
-    // height: 20px;
-    // right: -20px;
-    // background-size: 100% auto;
-  }
 }
 
 .prog-slider__brief {

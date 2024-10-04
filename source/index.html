@@ -338,7 +338,8 @@
       </section>
 
       <section class="news news--wrapper" id="news" data-test="news">
-        <h2 class="news__title">Новости и материалы</h2>
+        <div class="news__container">
+          <h2 class="news__title">Новости и материалы</h2>
         <ul class="news__point-list">
           <li class="news__point-item news__point-item--active">
             <h3 class="news__point-item-headline">Общее</h3>
@@ -358,33 +359,146 @@
         </ul>
 
         <div class="news__slider news-slider">
-          <div class="news-slider__slide">
-            <span>23/03/2023</span>
-            <h3>Интервью с участницей программы стажировки</h3>
-            <p>
-              Саша рассказывает, как попала в программу и как прошла 6-
-              месячная стажировка в ISOFound
-            </p>
-            <a class="news-slider__link" href="#"></a>
+          <div class="news-slider__slide news-slider__slide--1">
+            <div class="news-slider__inner">
+              <span>23/03/2023</span>
+              <h3>Интервью с участницей программы стажировки</h3>
+              <div class="news-slider__brief">
+                <p>
+                  Саша рассказывает, как попала в программу и как прошла 6-
+                  месячная стажировка в ISOFound
+                </p>
+                <a class="news-slider__link" href="#">
+                  <span class="news-slider__link-img">
+                    <svg
+                    width="8"
+                    height="8"
+                    viewbox="0 0 8 8"
+                    fill="none"
+                    stroke="white"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="news-slider__slide">
-            <span>20/03/2023</span>
-            <h3>Путешествуем по миру</h3>
-            <p>Какие места посещают наши студенты весной</p>
-            <a class="news-slider__link" href="#"></a>
+
+          <div class="news-slider__slide news-slider__slide--2">
+            <div class="news-slider__inner">
+              <span>20/03/2023</span>
+              <h3>Путешествуем по миру</h3>
+              <div class="news-slider__brief">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="news-slider__link" href="#">
+                  <span class="news-slider__link-img">
+                    <svg
+                    width="8"
+                    height="8"
+                    viewbox="0 0 8 8"
+                    fill="none"
+                    stroke="white"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-slider__slide news-slider__slide--3">
+            <div class="news-slider__inner">
+              <span>20/03/2023</span>
+              <h3>Путешествуем по миру</h3>
+              <div class="news-slider__brief">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="news-slider__link" href="#">
+                  <span class="news-slider__link-img">
+                    <svg
+                    width="8"
+                    height="8"
+                    viewbox="0 0 8 8"
+                    fill="none"
+                    stroke="white"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-slider__slide news-slider__slide--4">
+            <div class="news-slider__inner">
+              <span>20/03/2023</span>
+              <h3>Путешествуем по миру</h3>
+              <div class="news-slider__brief">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="news-slider__link" href="#">
+                  <span class="news-slider__link-img">
+                    <svg
+                    width="8"
+                    height="8"
+                    viewbox="0 0 8 8"
+                    fill="none"
+                    stroke="white"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="news__pagination">
-          <button type="button"></button>
+          <button class="news__pag-button news__pag-button--prev" type="button">
+            <svg
+              width="10"
+              height="10"
+              viewbox="0 0 10 10"
+              fill="none"
+              stroke="#316DC2"
+              role="img"
+              aria-hidden="true"
+              focusable="false">
+              <use href="/__spritemap#sprite-arrow2"></use>
+            </svg>
+          </button>
           <ul class="news__pagination-list">
             <li class="news__pagination-item news__pagination-item--active"><a href="#">1</a></li>
             <li class="news__pagination-item"><a href="#">2</a></li>
             <li class="news__pagination-item"><a href="#">3</a></li>
             <li class="news__pagination-item"><a href="#">4</a></li>
           </ul>
-          <button type="button"></button>
+          <button class="news__pag-button news__pag-button--next" type="button">
+            <svg
+              width="10"
+              height="10"
+              viewbox="0 0 10 10"
+              fill="none"
+              stroke="#316DC2"
+              role="img"
+              aria-hidden="true"
+              focusable="false">
+              <use href="/__spritemap#sprite-arrow2"></use>
+            </svg>
+          </button>
         </div>
+        </div>
+
       </section>
 
       <section class="faq faq--wrapper" data-test="FAQ">

@@ -1,12 +1,15 @@
 .news--wrapper {
+  background-color: $accent-beige;
+}
+
+.news__container {
   padding: 50px 15px;
+  margin: 0 auto;
   width: 290px;
 
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  background-color: $accent-beige;
 
   @media (min-width: $tablet) {
     padding: 50px 45px;
@@ -55,14 +58,22 @@
   list-style: none;
 
   @media (min-width: $tablet) {
+    width: 674px;
+    gap: 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 720px;
   }
 }
 
 .news__point-item {
-  padding: 12px 7px;
+  padding: 0 14px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .news__point-item--active {
@@ -126,6 +137,23 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 32px;
+  }
+}
+
+.news__pag-button {
+  padding: 6px;
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $accent-beige;
+  border: none;
+
+  &--prev {
+    transform: rotate(180deg);
   }
 }
 
