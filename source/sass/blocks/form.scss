@@ -24,13 +24,14 @@
   min-height: 667px;
   height: auto;
 
-  background-image: url("../../img/form/background-mob.jpg"),
+  background-image:
+    url("../../img/form/background-mob.jpg"),
     linear-gradient(rgb(8 112 165 / 92%), rgb(155 141 141 / 91%));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/form/background-mob@2x.jpg");
   }
 
@@ -43,7 +44,7 @@
 
     background-image: url("../../img/form/background-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/form/background-tablet@2x.jpg");
     }
   }
@@ -53,7 +54,7 @@
 
     background-image: url("../../img/form/background-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/form/background-desktop@2x.jpg");
     }
   }
@@ -201,13 +202,13 @@
       line-height: 12px;
     }
   }
+}
 
-  &--break {
-    display: block;
+.form__label-break {
+  display: block;
 
-    @media (min-width: $tablet) {
-      display: inline;
-    }
+  @media (min-width: $tablet) {
+    display: inline;
   }
 }
 

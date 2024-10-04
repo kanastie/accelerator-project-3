@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/hero/photo-7-mob@2x.jpg");
     background-size: 100% auto;
     background-position: center;
@@ -22,7 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/hero/photo-7-tablet@2x.jpg");
       background-size: 100% auto;
       background-position: center;
@@ -38,7 +38,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/hero/photo-7@2x.jpg");
       background-size: 100% auto;
       background-position: center;
@@ -168,7 +168,7 @@
   font-weight: 400;
   color: $base-black;
 
-  border-radius: 0 0 14px 0;
+  border-radius: 0 0 14px;
   background-color: $base-white;
 
   @media (min-width: $tablet) {
@@ -216,7 +216,7 @@
   @media (min-width: $tablet) {
     padding: 0 40px 0 30px;
 
-    border-radius: 0 0 30px 0;
+    border-radius: 0 0 30px;
   }
 
   @media (min-width: $desktop) {

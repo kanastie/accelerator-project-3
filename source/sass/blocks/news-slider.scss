@@ -40,14 +40,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/news/photo1-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop) {
     background-image: url("../../img/news/photo1-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/news/photo1-desktop@2x.jpg");
     }
   }
@@ -59,14 +59,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/news/photo2-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop) {
     background-image: url("../../img/news/photo2-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/news/photo2-desktop@2x.jpg");
     }
   }
@@ -78,14 +78,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/news/photo3-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop) {
     background-image: url("../../img/news/photo3-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/news/photo3-desktop@2x.jpg");
     }
   }
@@ -97,7 +97,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/news/photo4-tablet@2x.jpg");
   }
 
@@ -105,7 +105,7 @@
     display: none;
     background-image: url("../../img/news/photo4-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../../img/news/photo4-desktop@2x.jpg");
     }
   }
@@ -142,7 +142,7 @@
   background-color: $accent-beige;
 }
 
-.news-slider__slide h3 {
+.news-slider__slide h4 {
   position: relative;
   margin: 0;
   padding: 12px 12px 6px 0;
