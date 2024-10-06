@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internship</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="img/favicon/apple-icon-180x180.png"
+      type="image/png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="img/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="preload"
+      href="fonts/Manrope-Light.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Manrope-Medium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Manrope-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="sass/style.scss" />
+    <meta
+      name="description"
+      content="Проект «Стажировка» — повышение квалификации молодых специалистов посредством волонтёрских программ, стажировок, обучения зарубежом. Совместно с правительствами и волонтёрскими бригадами."
+    />
   </head>
 
   <body class="page-body">
@@ -151,19 +190,19 @@
                 <li>
                   <h4>Более 3000 участников</h4>
                   <p>
-                    уже успешно прошли программу от «Стажировка» и остались
-                    в разных странах
+                    уже успешно прошли программу от «<span>С</span>тажировка»
+                    и остались в разных странах
                   </p>
                 </li>
                 <li>
                   <h4>Участники из 60 стран</h4>
                   <p>
-                    студенты со всего мира приезжают на программу «Стажировки»
-                    от 3 месяцев до 1 года
+                    студенты со всего мира приезжают на программу
+                    «<span>С</span>тажировки» от 3 месяцев до 1 года
                   </p>
                 </li>
                 <li>
-                  <h4>От 4 200 $ до 8 400 $</h4>
+                  <h4>От 4 200 $<br />до 8 400 $</h4>
                   <p>
                     грант всем участникам для комфортного прохождения программы
                   </p>
@@ -216,7 +255,7 @@
                   <h3 class="prog-slider__title">Волонтёрство</h3>
                   <div class="prog-slider__brief">
                     <p>
-                      Помогайте другим и развивайте свои&nbsp;лидерские качества
+                      Помогайте другим и развивайте свои лидерские&nbsp;качества
                     </p>
                     <a class="prog-slider__link" href="#">
                       <span class="visually-hidden">Перейти</span>
@@ -292,6 +331,7 @@
               <button
                 class="programms__pag-button programms__pag-button--prev"
                 type="button"
+                disabled
               >
                 <span class="visually-hidden">Назад</span>
                 <svg
@@ -343,8 +383,8 @@
                   <source
                     media="(min-width: 1440px)"
                     srcset="
-                      ./img/grants/photo-1-desktop.jpg,
-                      ./img/grants/photo-1-desktop@2x.jpg 2x
+                      ./img/grants/photo-1-desktop.webp,
+                      ./img/grants/photo-1-desktop@2x.webp 2x
                     "
                     type="image/jpeg"
                     width="498"
@@ -353,8 +393,8 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/grants/photo-1-tablet.jpg,
-                      ./img/grants/photo-1-tablet@2x.jpg 2x
+                      ./img/grants/photo-1-tablet.webp,
+                      ./img/grants/photo-1-tablet@2x.webp 2x
                     "
                     type="image/jpeg"
                     width="678"
@@ -362,8 +402,8 @@
                   />
                   <img
                     class="grants__img"
-                    src="./img/grants/photo-1-mob.jpg"
-                    srcset="./img/grants/photo-1-mob@2x.jpg 2x"
+                    src="./img/grants/photo-1-mob.webp"
+                    srcset="./img/grants/photo-1-mob@2x.webp 2x"
                     alt=""
                     width="290"
                     height="200"
@@ -428,7 +468,7 @@
             <div class="news__slider news-slider">
               <div class="news-slider__slide news-slider__slide--1">
                 <div class="news-slider__inner">
-                  <span>23/03/2023</span>
+                  <span class="news-slider__date">23/03/2023</span>
                   <h4>Интервью с участницей программы стажировки</h4>
                   <div class="news-slider__brief">
                     <p>
@@ -458,7 +498,7 @@
 
               <div class="news-slider__slide news-slider__slide--2">
                 <div class="news-slider__inner">
-                  <span>20/03/2023</span>
+                  <span class="news-slider__date">20/03/2023</span>
                   <h4>Путешествуем по миру</h4>
                   <div class="news-slider__brief">
                     <p>Какие места посещают наши студенты весной</p>
@@ -485,7 +525,7 @@
 
               <div class="news-slider__slide news-slider__slide--3">
                 <div class="news-slider__inner">
-                  <span>17/03/2023</span>
+                  <span class="news-slider__date">17/03/2023</span>
                   <h4>Новая программа волонтёрства</h4>
                   <div class="news-slider__brief">
                     <p>Программа помощи детям длительностью 4 месяца</p>
@@ -512,7 +552,7 @@
 
               <div class="news-slider__slide news-slider__slide--4">
                 <div class="news-slider__inner">
-                  <span>10/03/2023</span>
+                  <span class="news-slider__date">10/03/2023</span>
                   <h4>Построй свою карьеру</h4>
                   <div class="news-slider__brief">
                     <p>
@@ -673,8 +713,8 @@
                       <source
                         media="(min-width: 768px)"
                         srcset="
-                          ./img/reviews/avatar1-tablet.jpg,
-                          ./img/reviews/avatar1-tablet@2x.jpg 2x
+                          ./img/reviews/avatar1-tablet.webp,
+                          ./img/reviews/avatar1-tablet@2x.webp 2x
                         "
                         type="image/jpeg"
                         width="90"
@@ -682,8 +722,8 @@
                       />
                       <img
                         class="reviews-slider__author-img-img"
-                        src="./img/reviews/avatar1-mob.jpg"
-                        srcset="./img/reviews/avatar1-mob@2x.jpg 2x"
+                        src="./img/reviews/avatar1-mob.webp"
+                        srcset="./img/reviews/avatar1-mob@2x.webp 2x"
                         alt="Фото автора."
                         width="60"
                         height="60"
@@ -727,8 +767,8 @@
                       <source
                         media="(min-width: 768px)"
                         srcset="
-                          ./img/reviews/avatar2-tablet.jpg,
-                          ./img/reviews/avatar2-tablet@2x.jpg 2x
+                          ./img/reviews/avatar2-tablet.webp,
+                          ./img/reviews/avatar2-tablet@2x.webp 2x
                         "
                         type="image/jpeg"
                         width="90"
@@ -736,8 +776,8 @@
                       />
                       <img
                         class="reviews-slider__author-img-img"
-                        src="./img/reviews/avatar2-tablet.jpg"
-                        srcset="./img/reviews/avatar2-tablet@2x.jpg 2x"
+                        src="./img/reviews/avatar2-tablet.webp"
+                        srcset="./img/reviews/avatar2-tablet@2x.webp 2x"
                         alt="Фото автора."
                         width="60"
                         height="60"
@@ -781,6 +821,7 @@
               <button
                 class="reviews__pag-button reviews__pag-button--prev"
                 type="button"
+                disabled
               >
                 <span class="visually-hidden">Назад</span>
                 <svg
@@ -830,7 +871,7 @@
               <div class="contacts__list">
                 <div class="contacts__item">
                   <h3 class="contacts__headline">Центральный офис</h3>
-                  <p class="contacts__decription">
+                  <p class="contacts__decription contacts__decription--address">
                     г. Новосибирск, ул. Щетинкина 68, культурный центр
                   </p>
                 </div>
@@ -855,8 +896,8 @@
                   <source
                     media="(min-width: 1440px)"
                     srcset="
-                      ./img/contacts/map-desktop.jpg,
-                      ./img/contacts/map-desktop@2x.jpg 2x
+                      ./img/contacts/map-desktop.webp,
+                      ./img/contacts/map-desktop@2x.webp 2x
                     "
                     type="image/jpeg"
                     width="1240"
@@ -865,8 +906,8 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contacts/map-tablet.jpg,
-                      ./img/contacts/map-tablet@2x.jpg 2x
+                      ./img/contacts/map-tablet.webp,
+                      ./img/contacts/map-tablet@2x.webp 2x
                     "
                     type="image/jpeg"
                     width="678"
@@ -874,8 +915,8 @@
                   />
                   <img
                     class="contacts__map"
-                    src="./img/contacts/map-mob.jpg"
-                    srcset="./img/contacts/map-mob@2x.jpg 2x"
+                    src="./img/contacts/map-mob.webp"
+                    srcset="./img/contacts/map-mob@2x.webp 2x"
                     alt=""
                     width="290"
                     height="240"
@@ -912,7 +953,7 @@
                     />
                   </label>
                   <label class="form__item">
-                    <span class="form__label">Номер телефона</span>
+                    <span class="form__label">Телефон</span>
                     <input
                       class="form__input"
                       type="tel"

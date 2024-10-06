@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet) {
     width: 678px;
+    top: 30px;
   }
 
   @media (min-width: $desktop) {
@@ -20,13 +21,13 @@
 }
 
 .header__nav {
-  padding: 4px 5px 4px 21px;
+  padding: 5px 5px 5px 21px;
   width: 136px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  border: 1px solid $accent-blue;
+  box-shadow: inset 0 0 0 1px $accent-blue;
   border-radius: 30px;
   background-color: $base-white;
 
