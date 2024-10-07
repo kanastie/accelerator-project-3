@@ -1,18 +1,19 @@
 .prog-slider__slide {
   width: 290px;
-  height: 400px;
+  min-height: 400px;
+  height: fit-content;
 
   border-radius: 12px;
   background-color: #c4d0e7;
 
   @media (min-width: $tablet) {
     width: 324px;
-    height: 420px;
+    min-height: 420px;
   }
 
   @media (min-width: $desktop) {
     width: 392px;
-    height: 420px;
+    min-height: 420px;
   }
 }
 

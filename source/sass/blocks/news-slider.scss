@@ -1,6 +1,7 @@
 .news-slider__slide {
   width: 290px;
-  height: 240px;
+  min-height: 240px;
+  height: fit-content;
 
   display: flex;
   align-items: flex-end;
@@ -10,27 +11,28 @@
 
   @media (min-width: $tablet) {
     width: 324px;
-    height: 350px;
+    min-height: 350px;
   }
 
   @media (min-width: $desktop) {
     width: 286px;
-    height: 400px;
+    min-height: 400px;
   }
 }
 
 .news-slider__slide:first-child {
   width: 290px;
-  height: 330px;
+  min-height: 330px;
+  height: fit-content;
 
   @media (min-width: $tablet) {
     width: 324px;
-    height: 350px;
+    min-height: 350px;
   }
 
   @media (min-width: $desktop) {
     width: 604px;
-    height: 400px;
+    min-height: 400px;
   }
 }
 
@@ -127,7 +129,7 @@
   position: relative;
   padding: 12px 12px 6px 0;
   display: block;
-  width: fit-content;
+  width: 67px;
 
   font-family: $manrope;
   font-size: 12px;

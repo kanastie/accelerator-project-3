@@ -24,6 +24,7 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
+  padding-right: 54px;
 
   font-family: $manrope;
   font-size: 20px;
@@ -33,6 +34,7 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 43px;
+    padding-right: 290px;
 
     font-size: 34px;
     line-height: 50px;
@@ -94,6 +96,7 @@
 
 .programms__link-text {
   margin-right: auto;
+  width: 105px;
 
   font-family: $manrope;
   font-size: 12px;

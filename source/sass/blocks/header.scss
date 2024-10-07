@@ -39,6 +39,7 @@
   margin-right: auto;
   padding: 0;
   display: inline-block;
+  width: 44px;
 
   font-family: $manrope;
   font-size: 14px;
@@ -48,6 +49,7 @@
   text-align: center;
   letter-spacing: 0.28px;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .header__nav-toggle {
