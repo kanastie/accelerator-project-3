@@ -336,3 +336,60 @@
 .about__list span {
   text-transform: uppercase;
 }
+
+.about__link:hover {
+  background-color: $accent-blue;
+}
+
+.about__link:hover .about__link-text {
+  color: $base-white;
+}
+
+.about__link:hover .about__link-img {
+  background-color: $base-white;
+  transform: rotate(45deg);
+  transition: transform 0.1s ease-out;
+}
+
+.about__link:hover .about__link-img svg {
+  stroke: $accent-blue;
+}
+
+.about__link:focus,
+.about__link:focus-visible {
+  outline: none;
+}
+
+.about__link:focus-visible .about__link-img {
+  transform: rotate(45deg);
+}
+
+.about__link:active {
+  background-color: $accent-blue;
+}
+
+.about__link:active .about__link-text {
+  opacity: 70%;
+}
+
+.about__link:active .about__link-img {
+  background-color: $base-white;
+  transform: rotate(45deg);
+}
+
+.about__link:active .about__link-img svg {
+  opacity: 70%;
+}
+
+.about__link[disabled] {
+  box-shadow: inset 0 0 0 1px $disabled;
+  pointer-events: none;
+}
+
+.about__link[disabled] .about__link-text {
+  color: $disabled;
+}
+
+.about__link[disabled] .about__link-img {
+  background-color: $disabled;
+}

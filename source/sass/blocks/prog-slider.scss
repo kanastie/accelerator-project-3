@@ -179,3 +179,43 @@
   background-color: #316dc2;
   border-radius: 50%;
 }
+
+.prog-slider__link:hover .prog-slider__link-img {
+  background-color: $base-white;
+  transform: rotate(45deg);
+  transition: transform 0.1s ease-out;
+}
+
+.prog-slider__link:hover .prog-slider__link-img svg {
+  stroke: $accent-blue;
+}
+
+.prog-slider__link:focus,
+.prog-slider__link:focus-visible {
+  outline: none;
+}
+
+.prog-slider__link:focus-visible .prog-slider__link-img {
+  transform: rotate(45deg);
+}
+
+.prog-slider__link:active {
+  background-color: $base-white;
+}
+
+.prog-slider__link:active .prog-slider__link-img {
+  background-color: $base-white;
+  transform: rotate(45deg);
+}
+
+.prog-slider__link:active .prog-slider__link-img svg {
+  opacity: 70%;
+}
+
+.prog-slider__link[disabled] {
+  pointer-events: none;
+}
+
+.prog-slider__link[disabled] .prog-slider__link-img {
+  background-color: $disabled;
+}

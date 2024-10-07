@@ -1,0 +1,14 @@
+.swiper-wrapper--reviews {
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 52px;
+    gap: 32px;
+  }
+}
