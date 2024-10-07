@@ -11,10 +11,12 @@
   list-style: none;
 
   @media (min-width: $tablet) {
+    width: 528px;
     column-gap: 15px;
   }
 
   @media (min-width: $desktop) {
+    width: 603px;
     column-gap: 30px;
   }
 }

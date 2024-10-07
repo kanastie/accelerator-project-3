@@ -35,6 +35,11 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-right: auto;
+    margin-left: 52px;
+  }
 }
 
 .footer__copyright {

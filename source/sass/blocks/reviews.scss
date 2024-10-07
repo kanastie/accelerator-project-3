@@ -5,12 +5,12 @@
 .reviews__container {
   position: relative;
 
-  padding: 55px 15px 50px;
+  padding: 56px 15px 49px;
   margin: 0 auto;
   width: 290px;
 
   @media (min-width: $tablet) {
-    padding: 50px 0 50px 45px;
+    padding: 50px 0 59px 45px;
     width: 723px;
   }
 
@@ -22,8 +22,9 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding: 0;
+  padding-right: 54px;
 
   font-family: $manrope;
   font-size: 20px;
@@ -40,6 +41,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 45px;
+    padding-left: 2px;
 
     font-size: 50px;
   }
@@ -48,7 +50,6 @@
 .reviews__slider {
   @media (min-width: $tablet) {
     margin-bottom: 50px;
-    // width: calc(100% + 45px);
 
     display: flex;
     gap: 30px;
@@ -56,13 +57,14 @@
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 52px;
     gap: 32px;
   }
 }
 
 .reviews__pagination {
   position: absolute;
-  top: 55px;
+  top: 54px;
   right: 15px;
 
   display: flex;
@@ -71,8 +73,9 @@
 
   @media (min-width: $tablet) {
     top: auto;
-    bottom: 40px;
+    bottom: 49px;
     right: 45px;
+    gap: 10px;
   }
 
   @media (min-width: $desktop) {
@@ -98,6 +101,10 @@
   }
 }
 
+.reviews__pag-button:disabled svg {
+  stroke: $disabled;
+}
+
 .reviews__scroll {
   display: none;
 
@@ -108,6 +115,10 @@
     width: 326px;
     height: 2px;
     background-color: $accent-blue;
+  }
+
+  @media (min-width: $desktop) {
+    width: 394px;
   }
 }
 
