@@ -155,15 +155,25 @@
   border-radius: 16px;
   box-shadow: inset 0 0 0 1px $accent-beige;
 
+  font-family: $manrope;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $accent-beige;
+
   @media (min-width: $tablet) {
     padding: 31px 26px;
     width: 305px;
-
     box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
     width: 100%;
+
+    line-height: 26px;
   }
 }
 
@@ -201,28 +211,26 @@
   }
 }
 
-.grants__claims-text {
-  font-family: $manrope;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $accent-beige;
-
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop) {
-    line-height: 26px;
-  }
-}
-
 .grants__img-container {
   overflow: hidden;
   border-radius: 20px;
+
+  width: 290px;
+  height: 200px;
+
+  @media (min-width: $tablet) {
+    width: 678px;
+    height: 375px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 498px;
+    height: 363px;
+  }
 }
 
-.grants__img {
+.grants__img-container img {
   display: block;
+  width: 100%;
+  background-color: #445a7a;
 }

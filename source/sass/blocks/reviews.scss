@@ -10,8 +10,8 @@
   width: 290px;
 
   @media (min-width: $tablet) {
-    padding: 50px 0 59px 45px;
-    width: 723px;
+    padding: 50px 0 59px;
+    width: 768px;
   }
 
   @media (min-width: $desktop) {
@@ -34,6 +34,7 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 40px;
+    padding-left: 45px;
 
     font-size: 34px;
     line-height: 50px;
@@ -62,10 +63,60 @@
   }
 }
 
+.reviews__scroll-frame {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    left: 45px;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: rgba($color: $accent-blue, $alpha: 0.2);
+  }
+
+  @media (min-width: $desktop) {
+    width: 1136px;
+    left: 0;
+  }
+}
+
+.reviews__scroll-element {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 326px;
+    height: 2px;
+    background-color: $accent-blue;
+    position: relative;
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop) {
+    width: 394px;
+  }
+}
+
+.reviews__scroll-element::before {
+  content: "";
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    bottom: -7px;
+    right: 0;
+    background: transparent;
+  }
+}
+
 .reviews__pagination {
   position: absolute;
-  top: 54px;
-  right: 15px;
+  top: -54px;
+  right: 0;
 
   display: flex;
   align-items: center;
@@ -73,14 +124,14 @@
 
   @media (min-width: $tablet) {
     top: auto;
-    bottom: 49px;
+    bottom: -10px;
     right: 45px;
     gap: 10px;
   }
 
   @media (min-width: $desktop) {
-    bottom: 60px;
-    right: 100px;
+    bottom: -10px;
+    right: 0;
   }
 }
 
@@ -95,49 +146,40 @@
 
   background-color: $accent-beige;
   border: none;
+  border-radius: 50%;
+  cursor: pointer;
 
   &--prev {
-    transform: rotate(180deg);
+    transform: scaleX(-1);
+    margin-top: -1px;
   }
+}
+
+.reviews__pag-button:hover svg {
+  stroke: rgba($color: $accent-blue, $alpha: 0.7);
+}
+
+.reviews__pag-button:focus-visible {
+  outline: none;
+  background-color: $base-white;
+}
+
+.reviews__pag-button:focus-visible svg {
+  stroke: $accent-blue;
+}
+
+.reviews__pag-button:active {
+  background-color: $base-white;
+}
+
+.reviews__pag-button:active svg {
+  stroke: rgba($color: $accent-blue, $alpha: 0.7);
+}
+
+.reviews__pag-button:disabled {
+  pointer-events: none;
 }
 
 .reviews__pag-button:disabled svg {
   stroke: $disabled;
-}
-
-.reviews__scroll {
-  display: none;
-
-  @media (min-width: $tablet) {
-    position: relative;
-
-    display: block;
-    width: 326px;
-    height: 2px;
-    background-color: $accent-blue;
-  }
-
-  @media (min-width: $desktop) {
-    width: 394px;
-  }
-}
-
-.reviews__scroll::before {
-  display: none;
-
-  @media (min-width: $tablet) {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 562px;
-    height: 2px;
-    background-color: $accent-blue;
-    opacity: 20%;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1136px;
-  }
 }

@@ -8,11 +8,11 @@ $base-white: #ffffff;
 $base-black: #484848;
 $accent-blue: #316dc2;
 $accent-beige: #f0efe9;
-$hover: #275699;
+$active: #275699;
 $disabled: #a9afb7;
 $error: #ff5e66;
-$overlay-blue: rgba(49, 109, 194, 0.2);
-$overlay-blue: rgba(13, 29, 51, 0.4);
+$overlay-blue: rgba($color: $accent-blue, $alpha: 0.2); // на фото
+$overlay-grey: rgba($color: #0d1d33, $alpha: 0.4); // под меню и формой
 
 // Fonts
 $manrope: "Manrope", "Arial", sans-serif;

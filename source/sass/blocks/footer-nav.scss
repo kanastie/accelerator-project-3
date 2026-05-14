@@ -39,3 +39,16 @@
     line-height: 17px;
   }
 }
+
+.footer-nav__link:hover {
+  color: rgba($color: $accent-blue, $alpha: 0.7);
+}
+
+.footer-nav__link:focus-visible {
+  outline: none;
+  color: $accent-blue;
+}
+
+.footer-nav__link:active {
+  color: $active;
+}
