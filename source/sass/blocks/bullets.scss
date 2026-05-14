@@ -4,6 +4,9 @@
   height: 8px;
   border: 2px solid $accent-blue;
   border-radius: 50%;
+  background-color: transparent;
+
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 12px;
@@ -11,7 +14,25 @@
   }
 
   &--active {
-    border: 2px solid #275699;
-    background-color: #275699;
+    border: 2px solid $active;
+    background-color: $active;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border: 2px solid $base-white;
+    background-color: rgba($color: $active, $alpha: 0.7);
+  }
+
+  &:focus-visible {
+    border: 2px solid $accent-blue;
+    background-color: $accent-blue;
+    outline: none;
+  }
+
+  &:active {
+    border: 2px solid $active;
+    background-color: $active;
   }
 }

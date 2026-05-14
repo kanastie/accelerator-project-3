@@ -98,6 +98,8 @@
   align-items: center;
   gap: 29px;
 
+  cursor: pointer;
+
   @media (min-width: $tablet) {
     align-items: flex-start;
   }
@@ -144,6 +146,11 @@
   font-weight: 400;
   color: $accent-beige;
 
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: ease 0.3s;
+
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
@@ -181,7 +188,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  mask-image: url("../../img/sprite/plus.svg");
+  mask-image: url("/__spritemap#sprite-plus-view");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 18px 18px;
@@ -198,68 +205,87 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  mask-image: url("../../img/sprite/minus.svg");
+  mask-image: url("/__spritemap#sprite-minus-view");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 18px 2px;
   background-color: $accent-blue;
 }
 
-.faq__button:hover,
-.faq__button:focus-visible {
-  background-color: $accent-beige;
-  box-shadow: inset 0 0 0 1px $accent-blue;
+.faq__item:hover,
+.faq__item:focus-within,
+.faq__item:active {
+  background-color: $base-white;
 }
 
-.faq__button:hover::before,
-.faq__button:focus-visible::before {
-  content: "";
-  background-color: $accent-blue;
-}
-
-.news-slider__link:focus,
-.news-slider__link:focus-visible {
+.faq__item:focus-within,
+.faq__item:focus-within .faq__button {
   outline: none;
 }
 
-.faq__button:active {
-  background-color: $hover;
+.faq__item:hover .faq__button,
+.faq__item:focus-within .faq__button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px $accent-blue;
 }
 
-.faq__button:active::before {
-  content: "";
+.faq__item:hover .faq__button::before,
+.faq__item:focus-within .faq__button::before {
+  background-color: $accent-blue;
+}
+
+.faq__item:active h3 {
+  color: $active;
+}
+
+.faq__item:active .faq__button {
+  background-color: $active;
+  box-shadow: inset 0 0 0 1px $active;
+}
+
+.faq__item:active .faq__button::before {
   background-color: $base-white;
 }
 
-.faq__button[disabled] {
-  background-color: $disabled;
-  pointer-events: none;
-  opacity: 70%;
+.faq__item--open:hover,
+.faq__item--open:focus-within {
+  background-color: $accent-blue;
 }
 
-.faq__button[disabled]::before {
-  content: "";
-  background-color: $base-white;
-  opacity: 70%;
-}
-
-.faq__item--open .faq__button:hover,
-.faq__item--open .faq__button:focus-visible {
+.faq__item--open:hover .faq__button,
+.faq__item--open:focus-within .faq__button {
   background-color: transparent;
   box-shadow: inset 0 0 0 1px $base-white;
 }
 
-.faq__item--open .faq__button:hover::before,
-.faq__item--open .faq__button:focus-visible::before {
-  content: "";
+.faq__item--open:hover .faq__button::before,
+.faq__item--open:focus-within .faq__button::before {
   background-color: $base-white;
 }
 
-.faq__item--open .faq__button:active {
-  background-color: $base-white;
+.faq__item--open:active {
+  background-color: $active;
+  box-shadow: inset 0 0 0 2px $active;
 }
 
-.faq__item--open .faq__button:active::before {
-  content: "";
+.faq__item--open:active h3 {
+  color: $base-white;
+}
+
+.faq__item--open:active .faq__button {
+  background-color: $base-white;
+  box-shadow: inset 0 0 0 1px $base-white;
+}
+
+.faq__item--open:active .faq__button::before {
   background-color: $accent-blue;
+}
+
+.faq__button:disabled {
+  background-color: $disabled;
+  pointer-events: none;
+}
+
+.faq__button:disabled::before {
+  background-color: rgba($color: $base-white, $alpha: 0.7);
 }

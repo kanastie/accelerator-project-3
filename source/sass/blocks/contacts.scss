@@ -172,11 +172,26 @@
   }
 }
 
+.contacts__decription a:hover {
+  color: rgba($color: $base-white, $alpha: 0.7);
+}
+
+.contacts__decription a:focus-visible {
+  outline: none;
+  color: $base-black;
+  box-shadow: 0 1px 0 0 $base-black;
+}
+
+.contacts__decription a:active {
+  color: $base-white;
+  box-shadow: 0 1px 0 0 $base-white;
+}
+
 .contacts__img-container {
   overflow: hidden;
   border-radius: 16px;
 }
 
-.contacts__map {
+.contacts__img-container img {
   display: block;
 }

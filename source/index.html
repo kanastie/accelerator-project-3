@@ -1,136 +1,428 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link
       rel="icon"
       href="img/favicon/apple-icon-180x180.png"
       type="image/png"
       sizes="180x180"
-    />
+    >
     <link
       rel="icon"
       href="img/favicon/favicon-32x32.png"
       type="image/png"
       sizes="32x32"
-    />
+    >
     <link
       rel="preload"
       href="fonts/Manrope-Light.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="preload"
       href="fonts/Manrope-Medium.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="preload"
       href="fonts/Manrope-Regular.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="sass/style.scss" />
+    >
+    <link rel="stylesheet" href="sass/style.scss">
     <meta
       name="description"
-      content="Проект «Стажировка» — повышение квалификации молодых специалистов посредством волонтёрских программ, стажировок, обучения зарубежом. Совместно с правительствами и волонтёрскими бригадами."
-    />
+      content="Проект «Стажировка» — это повышение квалификации молодых специалистов посредством волонтёрских программ, стажировок, обучения зарубежом. Совместно с правительствами и волонтёрскими бригадами."
+    >
   </head>
 
   <body class="page-body">
     <div class="page-body__container">
-      <main class="main main--wrapper">
+      <main>
         <h1 class="visually-hidden">Проект "Стажировка"</h1>
 
         <section class="hero hero--wrapper" data-test="hero">
-          <div class="hero__container">
+          <div>
             <header class="header header--wrapper">
               <div class="header__logo logo">
                 <div class="logo__background">
                   <img
-                    class="logo__img"
                     src="/__spritemap#sprite-logo-view"
                     alt="Логотип"
                     width="30"
                     height="30"
-                  />
+                  >
                 </div>
               </div>
               <div class="header__nav">
                 <span class="header__nav-title">Меню</span>
-                <span>
-                  <button class="header__nav-toggle" type="button">
-                    <svg
-                      width="16"
-                      height="8"
-                      viewbox="0 0 16 8"
-                      fill="none"
-                      stroke="white"
-                      role="img"
-                      aria-hidden="true"
-                      focusable="false"
-                    >
-                      <use href="/__spritemap#sprite-burger"></use>
-                    </svg>
-                    <span class="visually-hidden">Кнопка открытия меню</span>
-                  </button>
-                </span>
-                <div></div>
+                <button
+                  class="header__nav-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="list"
+                >
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+
+                <ul class="header__nav-list" id="list" aria-hidden="true">
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#about" tabindex="-1">
+                        О проекте
+                      </a>
+                    </li>
+                    <li class="header__nav-item">
+                      <button
+                        class="header__nav-link header__nav-link--dropdown"
+                        type="button"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-controls="sublist-1"
+                      >
+                        Программы
+                      </button>
+                      <ul class="header__subnav-list" id="sublist-1">
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#programms-1"
+                              tabindex="-1"
+                            >
+                              Стажировки
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#programms-2"
+                              tabindex="-1"
+                            >
+                              Волонтёрство
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#programms-3"
+                              tabindex="-1"
+                            >
+                              Учеба
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#"
+                              tabindex="-1"
+                            >
+                              Религия
+                            </a>
+                          </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#grants" tabindex="-1">
+                        Как поехать
+                      </a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#reviews" tabindex="-1">
+                        Отзывы
+                      </a>
+                    </li>
+                    <li class="header__nav-item">
+                      <button
+                        class="header__nav-link header__nav-link--dropdown"
+                        type="button"
+                        tabindex="-1"
+                        aria-expanded="false"
+                        aria-controls="sublist-2"
+                      >
+                        Новости
+                      </button>
+                      <ul class="header__subnav-list" id="sublist-2">
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#news-1"
+                              tabindex="-1"
+                            >
+                              Общее
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#news-2"
+                              tabindex="-1"
+                            >
+                              Волонтёрство
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#news-3"
+                              tabindex="-1"
+                            >
+                              Стажировки
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#news-4"
+                              tabindex="-1"
+                            >
+                              Карьера
+                            </a>
+                          </li>
+                          <li class="header__subnav-item">
+                            <a
+                              class="header__subnav-link"
+                              href="#news-5"
+                              tabindex="-1"
+                            >
+                              Путешествия
+                            </a>
+                          </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#contacts" tabindex="-1">
+                        Контакты
+                      </a>
+                    </li>
+                </ul>
               </div>
             </header>
 
-            <div class="hero__slider hero-slider">
-              <div class="hero-slider__slide">
-                <div class="hero-slider__inner">
-                  <div class="hero-slider__bullets bullets">
-                    <button
-                      class="bullets__button bullets__button--active"
-                      type="button"
-                    >
-                      <span class="visually-hidden">Первый слайд</span>
-                    </button>
-                    <button class="bullets__button" type="button">
-                      <span class="visually-hidden">Второй слайд</span>
-                    </button>
-                    <button class="bullets__button" type="button">
-                      <span class="visually-hidden">Третий слайд</span>
-                    </button>
+            <div class="hero__slider hero-slider swiper">
+              <div class="hero-slider__bullets bullets">
+                <button
+                  class="bullets__button bullets__button--active"
+                  type="button"
+                >
+                  <span class="visually-hidden">Первый слайд</span>
+                </button>
+                <button class="bullets__button" type="button">
+                  <span class="visually-hidden">Второй слайд</span>
+                </button>
+                <button class="bullets__button" type="button">
+                  <span class="visually-hidden">Третий слайд</span>
+                </button>
+              </div>
+
+              <div class="hero__slider-container swiper-wrapper">
+                <div class="hero-slider__slide swiper-slide">
+                  <div class="hero-slider__img">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/hero/hero-1-desk.webp,
+                          img/hero/hero-1-desk@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="1440"
+                        height="800"
+                      >
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/hero/hero-1-tab.webp,
+                          img/hero/hero-1-tab@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="768"
+                        height="1024"
+                      >
+                      <img
+                        src="img/hero/hero-1-mob.webp"
+                        srcset="img/hero/hero-1-mob@2x.webp 2x"
+                        alt="Счастливая девушка с учебниками."
+                        width="320"
+                        height="568"
+                      >
+                    </picture>
                   </div>
-                  <div class="hero-slider__plug"></div>
-                  <h2 class="hero-slider__title">
-                    Глобальный профессиональный опыт обучения за рубежом
-                  </h2>
-                  <p>
-                    Погрузитесь в академическую программу, проходя практику
-                    в разных городах, ощущая настоящий студенческий стиль жизни!
-                  </p>
-                  <div class="hero-slider__link-container">
-                    <a class="hero-slider__link" href="#">
-                      <span class="hero-slider__link-text">Подробнее</span>
-                      <span class="hero-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+
+                  <div class="hero-slider__inner">
+                    <div class="hero-slider__content">
+                      <h2 class="hero-slider__title">
+                        Глобальный профессиональный опыт обучения за рубежом
+                      </h2>
+                      <div class="hero-slider__brief">
+                        <p>
+                          Погрузитесь в академическую программу, проходя
+                          практику в разных городах, ощущая настоящий
+                          студенческий стиль жизни!
+                        </p>
+                        <div class="hero-slider__link-container">
+                          <a class="link" href="404.html">
+                            <span class="link__text">Подробнее</span>
+                            <span class="link__img">
+                              <svg
+                                width="8"
+                                height="8"
+                                viewbox="0 0 8 8"
+                                fill="none"
+                                stroke="white"
+                                role="img"
+                                aria-hidden="true"
+                                focusable="false"
+                              >
+                                <use href="/__spritemap#sprite-arrow"></use>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-slider__slide swiper-slide">
+                  <div class="hero-slider__img">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/hero/hero-2-desk.webp,
+                          img/hero/hero-2-desk@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="1440"
+                        height="800"
+                      >
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/hero/hero-2-tab.webp,
+                          img/hero/hero-2-tab@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="768"
+                        height="1024"
+                      >
+                      <img
+                        src="img/hero/hero-2-mob.webp"
+                        srcset="img/hero/hero-2-mob@2x.webp 2x"
+                        alt="Группа улыбающихся молодых людей разных культур."
+                        width="320"
+                        height="568"
+                      >
+                    </picture>
+                  </div>
+
+                  <div class="hero-slider__inner">
+                    <div class="hero-slider__content">
+                      <h2 class="hero-slider__title">
+                        Волонтёрские программы – внесите свой вклад в общество
+                      </h2>
+                      <div class="hero-slider__brief">
+                        <p>
+                          Возможности для преподавания, органического сельского
+                          хозяйства, устойчивого образа жизни и другое.
+                        </p>
+                        <div class="hero-slider__link-container">
+                          <a class="link" href="404.html">
+                            <span class="link__text">Подробнее</span>
+                            <span class="link__img">
+                              <svg
+                                width="8"
+                                height="8"
+                                viewbox="0 0 8 8"
+                                fill="none"
+                                stroke="white"
+                                role="img"
+                                aria-hidden="true"
+                                focusable="false"
+                              >
+                                <use href="/__spritemap#sprite-arrow"></use>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-slider__slide swiper-slide">
+                  <div class="hero-slider__img">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/hero/hero-3-desk.webp,
+                          img/hero/hero-3-desk@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="1440"
+                        height="800"
+                      >
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/hero/hero-3-tab.webp,
+                          img/hero/hero-3-tab@2x.webp 2x
+                        "
+                        type="image/webp"
+                        width="768"
+                        height="1024"
+                      >
+                      <img
+                        src="img/hero/hero-3-mob.webp"
+                        srcset="img/hero/hero-3-mob@2x.webp 2x"
+                        alt="Мужчина что-то объясняет коллегам."
+                        width="320"
+                        height="568"
+                      >
+                    </picture>
+                  </div>
+
+                  <div class="hero-slider__inner">
+                    <div class="hero-slider__content">
+                      <h2 class="hero-slider__title">
+                        Программы стажировок в крупнейших компаниях мира
+                      </h2>
+                      <div class="hero-slider__brief">
+                        <p>
+                          Получите незаменимый опыт работы в ведущих мировых
+                          компаниях и государственных организациях.
+                        </p>
+                        <div class="hero-slider__link-container">
+                          <a class="link" href="404.html">
+                            <span class="link__text">Подробнее</span>
+                            <span class="link__img">
+                              <svg
+                                width="8"
+                                height="8"
+                                viewbox="0 0 8 8"
+                                fill="none"
+                                stroke="white"
+                                role="img"
+                                aria-hidden="true"
+                                focusable="false"
+                              >
+                                <use href="/__spritemap#sprite-arrow"></use>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,7 +441,7 @@
                 </p>
               </div>
               <div class="about__second-wrap">
-                <h3 class="about__headline">Наша цель</h3>
+                <h3>Наша цель</h3>
                 <p>
                   Наша деятельность направлена на повышение квалификации молодых
                   специалистов на ранних и средних стадиях карьеры, предоставляя
@@ -157,9 +449,11 @@
                   сталкиваются в мире. Цель центра — наделить этих людей
                   способностью инициировать значимые изменения.
                 </p>
-                <a class="about__link" href="#">
-                  <span class="about__link-text">Подробнее о проекте</span>
-                  <span class="about__link-img">
+                <button class="link link--about" type="button">
+                  <span class="link__text link__text--about">
+                    Подробнее о проекте
+                  </span>
+                  <span class="link__img link__img--about">
                     <svg
                       width="8"
                       height="8"
@@ -173,7 +467,7 @@
                       <use href="/__spritemap#sprite-arrow"></use>
                     </svg>
                   </span>
-                </a>
+                </button>
               </div>
             </div>
 
@@ -202,7 +496,7 @@
                   </p>
                 </li>
                 <li>
-                  <h4>От 4 200 $<br />до 8 400 $</h4>
+                  <h4>От 4 200 $<br>до 8 400 $</h4>
                   <p>
                     грант всем участникам для комфортного прохождения программы
                   </p>
@@ -220,97 +514,243 @@
           <div class="programms__container">
             <h2 class="programms__title">Программы</h2>
 
-            <div class="programms__slider prog-slider">
-              <div class="prog-slider__slide prog-slider__slide--1">
-                <div class="prog-slider__inner">
-                  <h3 class="prog-slider__title">Стажировки</h3>
-                  <div class="prog-slider__brief">
-                    <p>
-                      Получите незаменимый опыт работы в крупнейших мировых
-                      компаниях.
-                    </p>
-                    <a class="prog-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="prog-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
+            <div class="programms__slider-wrapper">
+              <div class="programms__slider prog-slider swiper">
+                <div class="prog-slider__container swiper-wrapper">
+                  <div class="prog-slider__slide swiper-slide" id="programms-1">
+                    <div class="prog-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/programms/prog-1-desk.webp,
+                            img/programms/prog-1-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="392"
+                          height="420"
                         >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/programms/prog-1-tab.webp,
+                            img/programms/prog-1-tab@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="324"
+                          height="420"
+                        >
+                        <img
+                          src="img/programms/prog-1-mob.webp"
+                          srcset="img/programms/prog-1-mob@2x.webp 2x"
+                          alt="Девушки читают документ."
+                          width="290"
+                          height="400"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="prog-slider__inner">
+                      <h3 class="prog-slider__title">Стажировки</h3>
+                      <div class="prog-slider__brief">
+                        <p>
+                          Получите незаменимый опыт работы в крупнейших мировых
+                          компаниях.
+                        </p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="prog-slider__slide swiper-slide" id="programms-2">
+                    <div class="prog-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/programms/prog-2-desk.webp,
+                            img/programms/prog-2-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="392"
+                          height="420"
+                        >
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/programms/prog-2-tab.webp,
+                            img/programms/prog-2-tab@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="324"
+                          height="420"
+                        >
+                        <img
+                          src="img/programms/prog-2-mob.webp"
+                          srcset="img/programms/prog-2-mob@2x.webp 2x"
+                          alt="Парень держит небольшое растение."
+                          width="290"
+                          height="400"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="prog-slider__inner">
+                      <h3 class="prog-slider__title">Волонтёрство</h3>
+                      <div class="prog-slider__brief">
+                        <p>
+                          Помогайте другим и развивайте свои
+                          лидерские&nbsp;качества
+                        </p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="prog-slider__slide swiper-slide" id="programms-3">
+                    <div class="prog-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/programms/prog-3-desk.webp,
+                            img/programms/prog-3-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="392"
+                          height="420"
+                        >
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/programms/prog-3-tab.webp,
+                            img/programms/prog-3-tab@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="324"
+                          height="420"
+                        >
+                        <img
+                          src="img/programms/prog-3-mob.webp"
+                          srcset="img/programms/prog-3-mob@2x.webp 2x"
+                          alt="Студент пишет конспект."
+                          width="290"
+                          height="400"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="prog-slider__inner">
+                      <h3 class="prog-slider__title">Учёба</h3>
+                      <div class="prog-slider__brief">
+                        <p>Получите образование и измените своё будущее.</p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="prog-slider__slide prog-slider__slide--2">
-                <div class="prog-slider__inner">
-                  <h3 class="prog-slider__title">Волонтёрство</h3>
-                  <div class="prog-slider__brief">
-                    <p>
-                      Помогайте другим и развивайте свои лидерские&nbsp;качества
-                    </p>
-                    <a class="prog-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="prog-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
+              <div class="programms__scroll-frame">
+                <span class="visually-hidden">Скролл-бар</span>
+                <div class="programms__scroll-element"></div>
               </div>
 
-              <div class="prog-slider__slide prog-slider__slide--3">
-                <div class="prog-slider__inner">
-                  <h3 class="prog-slider__title">Учёба</h3>
-                  <div class="prog-slider__brief">
-                    <p>Получите образование и измените своё будущее.</p>
-                    <a class="prog-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="prog-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
+              <div class="programms__pagination">
+                <button
+                  class="programms__pag-button programms__pag-button--prev"
+                  type="button"
+                  disabled
+                >
+                  <span class="visually-hidden">Назад</span>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewbox="0 0 10 10"
+                    fill="none"
+                    stroke="#316DC2"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <use href="/__spritemap#sprite-arrow2"></use>
+                  </svg>
+                </button>
+                <button
+                  class="programms__pag-button programms__pag-button--next"
+                  type="button"
+                >
+                  <span class="visually-hidden">Вперёд</span>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewbox="0 0 10 10"
+                    fill="none"
+                    stroke="#316DC2"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <use href="/__spritemap#sprite-arrow2"></use>
+                  </svg>
+                </button>
               </div>
             </div>
 
-            <div class="programms__scroll"></div>
-
             <div class="programms__link-container">
-              <a class="programms__link" href="#">
-                <span class="programms__link-text">Все программы</span>
-                <span class="programms__link-img">
+              <a class="link link--secondary" href="404.html">
+                <span class="link__text link__text--secondary">
+                  Все программы
+                </span>
+                <span class="link__img link__img--secondary">
                   <svg
                     width="8"
                     height="8"
@@ -325,46 +765,6 @@
                   </svg>
                 </span>
               </a>
-            </div>
-
-            <div class="programms__pagination">
-              <button
-                class="programms__pag-button programms__pag-button--prev"
-                type="button"
-                disabled
-              >
-                <span class="visually-hidden">Назад</span>
-                <svg
-                  width="10"
-                  height="10"
-                  viewbox="0 0 10 10"
-                  fill="none"
-                  stroke="#316DC2"
-                  role="img"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="/__spritemap#sprite-arrow2"></use>
-                </svg>
-              </button>
-              <button
-                class="programms__pag-button programms__pag-button--next"
-                type="button"
-              >
-                <span class="visually-hidden">Вперёд</span>
-                <svg
-                  width="10"
-                  height="10"
-                  viewbox="0 0 10 10"
-                  fill="none"
-                  stroke="#316DC2"
-                  role="img"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="/__spritemap#sprite-arrow2"></use>
-                </svg>
-              </button>
             </div>
           </div>
         </section>
@@ -389,7 +789,7 @@
                     type="image/jpeg"
                     width="498"
                     height="363"
-                  />
+                  >
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -399,7 +799,7 @@
                     type="image/jpeg"
                     width="678"
                     height="375"
-                  />
+                  >
                   <img
                     class="grants__img"
                     src="./img/grants/photo-1-mob.webp"
@@ -407,7 +807,7 @@
                     alt=""
                     width="290"
                     height="200"
-                  />
+                  >
                 </picture>
               </div>
             </div>
@@ -418,26 +818,18 @@
               </h3>
               <ul class="grants__claims-list">
                 <li class="grants__claims-item">
-                  <span class="grants__claims-text">
-                    Быть в возрасте от 16 до 30 лет
-                  </span>
+                  Быть в возрасте от 16 до 30 лет
                 </li>
                 <li class="grants__claims-item">
-                  <span class="grants__claims-text">
-                    Иметь оконченное среднее образование
-                  </span>
+                  Иметь оконченное среднее образование
                 </li>
                 <li class="grants__claims-item">
-                  <span class="grants__claims-text">
-                    Иметь документально подтверждённое отсутствие судимости
-                    и пройти консульскую проверку
-                  </span>
+                  Иметь документально подтверждённое отсутствие судимости
+                  и пройти консульскую проверку
                 </li>
                 <li class="grants__claims-item">
-                  <span class="grants__claims-text">
-                    За последние 2 года быть не больше 3х месяцев подряд
-                    непрерывно в одной стране
-                  </span>
+                  За последние 2 года быть не больше 3х месяцев подряд
+                  непрерывно в одной стране
                 </li>
               </ul>
             </div>
@@ -447,135 +839,218 @@
         <section class="news news--wrapper" id="news" data-test="news">
           <div class="news__container">
             <h2 class="news__title">Новости и материалы</h2>
-            <ul class="news__point-list">
-              <li class="news__point-item news__point-item--active">
-                <h3 class="news__point-item-headline">Общее</h3>
-              </li>
-              <li class="news__point-item">
-                <h3 class="news__point-item-headline">Волонтёрство</h3>
-              </li>
-              <li class="news__point-item">
-                <h3 class="news__point-item-headline">Стажировки</h3>
-              </li>
-              <li class="news__point-item">
-                <h3 class="news__point-item-headline">Карьера</h3>
-              </li>
-              <li class="news__point-item">
-                <h3 class="news__point-item-headline">Путешествия</h3>
-              </li>
-            </ul>
+            <div class="news__point-list">
+              <button
+                class="news__point-tab news__point-tab--active" type="button"
+                id="news-1"
+              >
+                <span class="news__point-tab-headline">Общее</span>
+              </button>
+              <button class="news__point-tab" type="button" id="news-2">
+                <span class="news__point-tab-headline">Волонтёрство</span>
+              </button>
+              <button class="news__point-tab" type="button" id="news-3">
+                <span class="news__point-tab-headline">Стажировки</span>
+              </button>
+              <button class="news__point-tab" type="button" id="news-4">
+                <span class="news__point-tab-headline">Карьера</span>
+              </button>
+              <button class="news__point-tab" type="button" id="news-5">
+                <span class="news__point-tab-headline">Путешествия</span>
+              </button>
+            </div>
 
-            <div class="news__slider news-slider">
-              <div class="news-slider__slide news-slider__slide--1">
-                <div class="news-slider__inner">
-                  <span class="news-slider__date">23/03/2023</span>
-                  <h4>Интервью с участницей программы стажировки</h4>
-                  <div class="news-slider__brief">
-                    <p>
-                      Саша рассказывает, как попала в программу и как прошла 6-
-                      месячная стажировка в ISOFound
-                    </p>
-                    <a class="news-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="news-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
+            <div class="news__slider-wrapper">
+              <div class="news__slider news-slider swiper">
+                <div class="news-slider__container swiper-wrapper">
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/news/news-1-desk.webp,
+                            img/news/news-1-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="286"
+                          height="400"
                         >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+                        <img
+                          src="img/news/news-1-tab.webp"
+                          srcset="img/news/news-1-tab@2x.webp 2x"
+                          alt="Девушка и парень разговаривают в библиотеке."
+                          width="290"
+                          height="240"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="news-slider__inner">
+                      <span class="news-slider__date">23/03/2023</span>
+                      <h3>Интервью с участницей программы стажировки</h3>
+                      <div class="news-slider__brief">
+                        <p>
+                          Саша рассказывает, как попала в программу и как прошла
+                          6- месячная стажировка в ISOFound
+                        </p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="news-slider__slide news-slider__slide--2">
-                <div class="news-slider__inner">
-                  <span class="news-slider__date">20/03/2023</span>
-                  <h4>Путешествуем по миру</h4>
-                  <div class="news-slider__brief">
-                    <p>Какие места посещают наши студенты весной</p>
-                    <a class="news-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="news-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/news/news-2-desk.webp,
+                            img/news/news-2-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="286"
+                          height="400"
                         >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+                        <img
+                          src="img/news/news-2-tab.webp"
+                          srcset="img/news/news-2-tab@2x.webp 2x"
+                          alt="Пейзаж города на побережье."
+                          width="290"
+                          height="240"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="news-slider__inner">
+                      <span class="news-slider__date">20/03/2023</span>
+                      <h3>Путешествуем по миру</h3>
+                      <div class="news-slider__brief">
+                        <p>Какие места посещают наши студенты весной</p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="news-slider__slide news-slider__slide--3">
-                <div class="news-slider__inner">
-                  <span class="news-slider__date">17/03/2023</span>
-                  <h4>Новая программа волонтёрства</h4>
-                  <div class="news-slider__brief">
-                    <p>Программа помощи детям длительностью 4 месяца</p>
-                    <a class="news-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="news-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-slider__img">
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            img/news/news-3-desk.webp,
+                            img/news/news-3-desk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          width="286"
+                          height="400"
                         >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+                        <img
+                          src="img/news/news-3-tab.webp"
+                          srcset="img/news/news-3-tab@2x.webp 2x"
+                          alt="Волонтёрский значок."
+                          width="290"
+                          height="240"
+                        >
+                      </picture>
+                    </div>
+
+                    <div class="news-slider__inner">
+                      <span class="news-slider__date">17/03/2023</span>
+                      <h3>Новая программа волонтёрства</h3>
+                      <div class="news-slider__brief">
+                        <p>Программа помощи детям длительностью 4 месяца</p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="news-slider__slide news-slider__slide--4">
-                <div class="news-slider__inner">
-                  <span class="news-slider__date">10/03/2023</span>
-                  <h4>Построй свою карьеру</h4>
-                  <div class="news-slider__brief">
-                    <p>
-                      Ведущие компании готовы трудоустроить выпускников
-                      стажировки
-                    </p>
-                    <a class="news-slider__link" href="#">
-                      <span class="visually-hidden">Перейти</span>
-                      <span class="news-slider__link-img">
-                        <svg
-                          width="8"
-                          height="8"
-                          viewbox="0 0 8 8"
-                          fill="none"
-                          stroke="white"
-                          role="img"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <use href="/__spritemap#sprite-arrow"></use>
-                        </svg>
-                      </span>
-                    </a>
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-slider__img">
+                      <img
+                        src="img/news/news-4-tab.webp"
+                        srcset="img/news/news-4-tab@2x.webp 2x"
+                        alt="Вид сверху на рабочий стол."
+                        width="290"
+                        height="240"
+                      >
+                    </div>
+
+                    <div class="news-slider__inner">
+                      <span class="news-slider__date">10/03/2023</span>
+                      <h3>Построй свою карьеру</h3>
+                      <div class="news-slider__brief">
+                        <p>
+                          Ведущие компании готовы трудоустроить выпускников
+                          стажировки
+                        </p>
+                        <a class="slide-link" href="404.html">
+                          <span class="visually-hidden">Перейти</span>
+                          <span class="slide-link__img">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewbox="0 0 8 8"
+                              fill="none"
+                              stroke="white"
+                              role="img"
+                              aria-hidden="true"
+                              focusable="false"
+                            >
+                              <use href="/__spritemap#sprite-arrow"></use>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -642,7 +1117,12 @@
                       <span class="visually-hidden">Открыть</span>
                     </button>
                   </div>
-                  <p></p>
+                  <p>
+                    Организатором программы является проект «Стажировка» в
+                    сотрудничестве с образовательными учреждениями. Сроки
+                    программы обмена могут варьироваться от одного семестра до
+                    года.
+                  </p>
                 </li>
                 <li class="faq__item">
                   <div>
@@ -651,7 +1131,11 @@
                       <span class="visually-hidden">Открыть</span>
                     </button>
                   </div>
-                  <p></p>
+                  <p>
+                    Грант на обучение — это финансовая поддержка, которую
+                    предоставляет организатор программы обмена студентами для
+                    оплаты учебных расходов.
+                  </p>
                 </li>
                 <li class="faq__item faq__item--open">
                   <div>
@@ -678,7 +1162,14 @@
                       <span class="visually-hidden">Открыть</span>
                     </button>
                   </div>
-                  <p></p>
+                  <p>
+                    Студенты, участвующие в проекте, могут использовать
+                    полученные знания и навыки в своей будущей профессиональной
+                    деятельности или продолжить обучение в высших учебных
+                    заведениях. Кроме того, многие университеты и колледжи
+                    предоставляют кредиты за участие в программе обмена
+                    студентами.
+                  </p>
                 </li>
                 <li class="faq__item">
                   <div>
@@ -690,7 +1181,15 @@
                       <span class="visually-hidden">Открыть</span>
                     </button>
                   </div>
-                  <p></p>
+                  <p>
+                    Процесс регистрации на программу обмена включает выбор
+                    университета-партнера и программы обмена, общение с
+                    координатором программы, заполнение заявления и
+                    предоставление необходимых документов, прохождение интервью,
+                    оформление визы, жилья и страховки, обучение по безопасности
+                    за границей и подписание договора об участии в программе.
+                    Подробнее можно узнать позвонив в центр.
+                  </p>
                 </li>
               </ul>
             </div>
@@ -705,165 +1204,169 @@
           <div class="reviews__container">
             <h2 class="reviews__title">Отзывы</h2>
 
-            <div class="reviews__slider reviews-slider">
-              <div class="swiper swiper--reviews">
-                <div class="swiper-wrapper swiper-wrapper--reviews">
-                  <div
-                    class="reviews-slider__slide reviews-slider__slide--1 swiper-slide"
-                  >
-                    <div class="reviews-slider__author">
-                      <div class="reviews-slider__author-img-container">
-                        <picture>
-                          <source
-                            media="(min-width: 768px)"
-                            srcset="
-                              ./img/reviews/avatar1-tablet.webp,
-                              ./img/reviews/avatar1-tablet@2x.webp 2x
-                            "
-                            type="image/jpeg"
-                            width="90"
-                            height="90"
-                          />
-                          <img
-                            class="reviews-slider__author-img-img"
-                            src="./img/reviews/avatar1-mob.webp"
-                            srcset="./img/reviews/avatar1-mob@2x.webp 2x"
-                            alt="Фото автора."
-                            width="60"
-                            height="60"
-                          />
-                        </picture>
+            <div class="reviews__slider-wrapper">
+              <div class="reviews__slider reviews-slider swiper">
+                <div class="reviews-slider__container swiper-wrapper">
+                  <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__inner">
+                      <div class="reviews-slider__author">
+                        <div class="reviews-slider__author-img-container">
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/reviews/avatar1-tablet.webp,
+                                ./img/reviews/avatar1-tablet@2x.webp 2x
+                              "
+                              type="image/jpeg"
+                              width="90"
+                              height="90"
+                            >
+                            <img
+                              src="./img/reviews/avatar1-mob.webp"
+                              srcset="./img/reviews/avatar1-mob@2x.webp 2x"
+                              alt="Фото автора."
+                              width="60"
+                              height="60"
+                            >
+                          </picture>
+                        </div>
+                        <div class="reviews-slider__author-name">
+                          <span>Лола</span>
+                          <span>Алекс</span>
+                        </div>
                       </div>
-                      <div class="reviews-slider__author-name">
-                        <span>Лола</span>
-                        <span>Алекс</span>
-                      </div>
+                      <dl class="reviews-slider__features">
+                        <div class="reviews-slider__first-wrap">
+                          <dt class="reviews-slider__term">Программа</dt>
+                          <dd class="reviews-slider__description">
+                            Masa Art Challenge
+                          </dd>
+                        </div>
+                        <div class="reviews-slider__second-wrap">
+                          <dt class="reviews-slider__term">Дата</dt>
+                          <dd class="reviews-slider__description">
+                            Осень 2022
+                          </dd>
+                        </div>
+                      </dl>
+                      <h3>
+                        Я могу с уверенностью сказать, что это был один из самых
+                        незабываемых опытов в жизни!
+                      </h3>
+                      <p>
+                        Я рекомендую программу «Стажировка» всем студентам,
+                        желающим получить незабываемые впечатления. <br>
+                        Сочетание путешествий, общения и значимой работы
+                        действительно отличает её от других программ,
+                        и я чувствую огромную благодарность за предоставленную
+                        мне возможность.
+                      </p>
                     </div>
-                    <dl class="reviews-slider__features">
-                      <div class="reviews-slider__first-wrap">
-                        <dt class="reviews-slider__term">Программа</dt>
-                        <dd class="reviews-slider__description">
-                          Masa Art Challenge
-                        </dd>
-                      </div>
-                      <div class="reviews-slider__second-wrap">
-                        <dt class="reviews-slider__term">Дата</dt>
-                        <dd class="reviews-slider__description">Осень 2022</dd>
-                      </div>
-                    </dl>
-                    <h3>
-                      Я могу с уверенностью сказать, что это был один из самых
-                      незабываемых опытов в жизни!
-                    </h3>
-                    <p>
-                      Я рекомендую программу «Стажировка» всем студентам,
-                      желающим получить незабываемые впечатления. Сочетание
-                      путешествий, общения и значимой работы действительно
-                      отличает её от других программ, и я чувствую огромную
-                      благодарность за предоставленную мне возможность.
-                    </p>
                   </div>
 
-                  <div
-                    class="reviews-slider__slide reviews-slider__slide--2 swiper-slide"
-                  >
-                    <div class="reviews-slider__author">
-                      <div class="reviews-slider__author-img-container">
-                        <picture>
-                          <source
-                            media="(min-width: 768px)"
-                            srcset="
-                              ./img/reviews/avatar2-tablet.webp,
-                              ./img/reviews/avatar2-tablet@2x.webp 2x
-                            "
-                            type="image/jpeg"
-                            width="90"
-                            height="90"
-                          />
-                          <img
-                            class="reviews-slider__author-img-img"
-                            src="./img/reviews/avatar2-tablet.webp"
-                            srcset="./img/reviews/avatar2-tablet@2x.webp 2x"
-                            alt="Фото автора."
-                            width="60"
-                            height="60"
-                          />
-                        </picture>
+                  <div class="reviews-slider__slide swiper-slide">
+                    <div class="reviews-slider__inner">
+                      <div class="reviews-slider__author">
+                        <div class="reviews-slider__author-img-container">
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/reviews/avatar2-tablet.webp,
+                                ./img/reviews/avatar2-tablet@2x.webp 2x
+                              "
+                              type="image/jpeg"
+                              width="90"
+                              height="90"
+                            >
+                            <img
+                              src="./img/reviews/avatar2-tablet.webp"
+                              srcset="./img/reviews/avatar2-tablet@2x.webp 2x"
+                              alt="Фото автора."
+                              width="60"
+                              height="60"
+                            >
+                          </picture>
+                        </div>
+                        <div class="reviews-slider__author-name">
+                          <span>Давид</span>
+                          <span>Иванов</span>
+                        </div>
                       </div>
-                      <div class="reviews-slider__author-name">
-                        <span>Давид</span>
-                        <span>Иванов</span>
-                      </div>
+                      <dl class="reviews-slider__features">
+                        <div class="reviews-slider__first-wrap">
+                          <dt class="reviews-slider__term">Программа</dt>
+                          <dd class="reviews-slider__description">
+                            Volunteer Chance
+                          </dd>
+                        </div>
+                        <div class="reviews-slider__second-wrap">
+                          <dt class="reviews-slider__term">Дата</dt>
+                          <dd class="reviews-slider__description">Лето 2022</dd>
+                        </div>
+                      </dl>
+                      <h3>
+                        Благодаря опыту стажировки я узнал так много нового
+                        о себе и об окружающем мире.
+                      </h3>
+                      <p>
+                        Каждый день был возможностью оказать ощутимое влияние
+                        на жизнь других людей. Я бы очень рекомендовал
+                        эту волонтёрскую программу всем, кто ищет значимый
+                        и незабываемый опыт. Организация была на высшем уровне.
+                        Для меня было честью быть частью такой удивительной
+                        инициативы.
+                      </p>
                     </div>
-                    <dl class="reviews-slider__features">
-                      <div class="reviews-slider__first-wrap">
-                        <dt class="reviews-slider__term">Программа</dt>
-                        <dd class="reviews-slider__description">
-                          Volunteer Chance
-                        </dd>
-                      </div>
-                      <div class="reviews-slider__second-wrap">
-                        <dt class="reviews-slider__term">Дата</dt>
-                        <dd class="reviews-slider__description">Лето 2022</dd>
-                      </div>
-                    </dl>
-                    <h3>
-                      Благодаря опыту стажировки я узнал так много нового о себе
-                      и об окружающем мире.
-                    </h3>
-                    <p>
-                      Каждый день был возможностью оказать ощутимое влияние
-                      на жизнь других людей. Я бы очень рекомендовал
-                      эту волонтёрскую программу всем, кто ищет значимый
-                      и незабываемый опыт. Организация была на высшем уровне.
-                      Для меня было честью быть частью такой удивительной
-                      инициативы.
-                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="reviews__scroll"></div>
+              <div class="reviews__scroll-frame">
+                <span class="visually-hidden">Скролл-бар</span>
+                <div class="reviews__scroll-element"></div>
+              </div>
 
-            <div class="reviews__pagination">
-              <button
-                class="reviews__pag-button reviews__pag-button--prev"
-                type="button"
-                disabled
-              >
-                <span class="visually-hidden">Назад</span>
-                <svg
-                  width="10"
-                  height="10"
-                  viewbox="0 0 10 10"
-                  fill="none"
-                  stroke="#316DC2"
-                  role="img"
-                  aria-hidden="true"
-                  focusable="false"
+              <div class="reviews__pagination">
+                <button
+                  class="reviews__pag-button reviews__pag-button--prev"
+                  type="button"
+                  disabled
                 >
-                  <use href="/__spritemap#sprite-arrow2"></use>
-                </svg>
-              </button>
-              <button
-                class="reviews__pag-button reviews__pag-button--next"
-                type="button"
-              >
-                <span class="visually-hidden">Вперёд</span>
-                <svg
-                  width="10"
-                  height="10"
-                  viewbox="0 0 10 10"
-                  fill="none"
-                  stroke="#316DC2"
-                  role="img"
-                  aria-hidden="true"
-                  focusable="false"
+                  <span class="visually-hidden">Назад</span>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewbox="0 0 10 10"
+                    fill="none"
+                    stroke="#316DC2"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <use href="/__spritemap#sprite-arrow2"></use>
+                  </svg>
+                </button>
+                <button
+                  class="reviews__pag-button reviews__pag-button--next"
+                  type="button"
                 >
-                  <use href="/__spritemap#sprite-arrow2"></use>
-                </svg>
-              </button>
+                  <span class="visually-hidden">Вперёд</span>
+                  <svg
+                    width="10"
+                    height="10"
+                    viewbox="0 0 10 10"
+                    fill="none"
+                    stroke="#316DC2"
+                    role="img"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <use href="/__spritemap#sprite-arrow2"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -911,7 +1414,7 @@
                     type="image/jpeg"
                     width="1240"
                     height="486"
-                  />
+                  >
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -921,15 +1424,14 @@
                     type="image/jpeg"
                     width="678"
                     height="500"
-                  />
+                  >
                   <img
-                    class="contacts__map"
                     src="./img/contacts/map-mob.webp"
                     srcset="./img/contacts/map-mob@2x.webp 2x"
                     alt=""
                     width="290"
                     height="240"
-                  />
+                  >
                 </picture>
               </div>
             </div>
@@ -947,63 +1449,63 @@
                 </p>
 
                 <form
-                  class="form__form"
                   action="https://echo.htmlacademy.ru/"
                   method="post"
                 >
                   <label class="form__item">
                     <span class="form__label">Имя</span>
                     <input
-                      class="form__input"
                       type="text"
                       name="name"
                       title="Заполните это поле"
                       required
-                    />
+                    >
                   </label>
                   <label class="form__item">
                     <span class="form__label">Телефон</span>
                     <input
-                      class="form__input"
                       type="tel"
                       name="phone"
                       pattern="\+7\[0-9]{10}"
                       title="Заполните это поле"
                       required
-                    />
+                    >
                   </label>
-                  <label class="form__item">
-                    <span class="form__label">Ваше сообщение</span>
+                  <div>
+                    <label class="form__label" for="about-youself">Ваше сообщение</label>
                     <textarea
-                      class="form__input form__input--textarea"
                       name="message"
                       title="Заполните это поле"
+                      id="about-youself"
                       required
                     ></textarea>
-                  </label>
-                  <label class="form__item form__item--select">
-                    <span class="form__label">Выберите город</span>
+                  </div>
+                  <div>
+                    <label class="form__label form__label--select" for="choose-city">Выберите город</label>
                     <select
-                      class="form__input form__input--select"
                       name="city"
                       title="Заполните это поле"
+                      id="choose-city"
                       required
                     >
-                      <option value=""></option>
+                      <option value="">&nbsp;</option>
+                      <option value="nsk">Новосибирск</option>
+                      <option value="ekb">Екатеринбург</option>
+                      <option value="omsk">Омск</option>
                     </select>
-                  </label>
+                  </div>
                   <label class="form__item form__item--checkbox">
                     <input
-                      class="visually-hidden form__input"
+                      class="visually-hidden"
                       type="checkbox"
                       name="pd"
                       title="Заполните это поле"
                       required
-                    />
+                    >
                     <span class="form__mark"></span>
                     <span class="form__label form__label--checkbox">
                       Я согласен на обработку моих персональных
-                      <span class="form__label-break"> данных</span>
+                      <span class="form__label-break">данных</span>
                     </span>
                   </label>
 
@@ -1035,12 +1537,11 @@
         <div class="footer__logo logo">
           <div class="logo__background">
             <img
-              class="logo__img"
               src="/__spritemap#sprite-logo-view"
               alt="Логотип"
               width="30"
               height="30"
-            />
+            >
           </div>
         </div>
 
@@ -1071,6 +1572,7 @@
         </section>
 
         <section class="footer__copyright copyright copyright--wrapper">
+          <h2 class="visually-hidden">Копирайт</h2>
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/profession/frontender"
@@ -1120,6 +1622,81 @@
           </ul>
         </section>
       </footer>
+
+      <div class="modal modal--wrapper">
+        <div class="modal__container">
+          <button class="modal__cross" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+          <h2 class="modal__title">Напишите нам</h2>
+          <p class="modal__description">
+            Оставьте ваши контакты, если у вас остались вопросы –
+            мы на них ответим!
+          </p>
+
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal__form-item">
+              <span class="modal__form-label">Имя</span>
+              <input
+                type="text"
+                name="modal-name"
+                title="Заполните это поле"
+                required
+              >
+            </label>
+            <label class="modal__form-item">
+              <span class="modal__form-label">Телефон</span>
+              <input
+                type="text"
+                name="modal-phone"
+                pattern="\+7\[0-9]{10}"
+                title="Заполните это поле"
+                required
+              >
+            </label>
+            <div>
+              <label class="modal__form-label" for="modal-choose-city">Выберите город</label>
+              <select name="modal-city" title="Заполните это поле" id="modal-choose-city" required>
+                <option value="">&nbsp;</option>
+                <option value="nsk">Новосибирск</option>
+                <option value="ekb">Екатеринбург</option>
+                <option value="omsk">Омск</option>
+              </select>
+            </div>
+            <label class="modal__form-item modal__form-item--checkbox">
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="modal-pd"
+                title="Заполните это поле"
+                required
+              >
+              <span class="modal__form-mark"></span>
+              <span class="modal__form-label modal__form-label--checkbox">
+                Я согласен на обработку моих персональных данных
+              </span>
+            </label>
+
+            <button class="modal__form-button" type="submit">
+              <span class="modal__form-button-text">Отправить</span>
+              <span class="modal__form-button-img">
+                <svg
+                  width="8"
+                  height="8"
+                  viewbox="0 0 8 8"
+                  fill="none"
+                  stroke="#ffffff"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
 
       <script type="module" src="js/main.js"></script>
     </div>
